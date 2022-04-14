@@ -1,0 +1,17 @@
+@mixin center-flexbox(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin horizontal() {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin default-inputs(){
+  width: auto;
+  height: $height-elements;
+  border-radius: $border-radius;
+  padding: $side-padding;
+}
