@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className={style.background}>
       <div className={style.branchContainer}>
-        <p>
-          Sne<span>uder</span>
+        <p className={style.branchName}>
+          Sne<span className={style.branchDecoration}>uder</span>
         </p>
       </div>
 
