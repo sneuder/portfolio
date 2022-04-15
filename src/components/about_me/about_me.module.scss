@@ -1,4 +1,76 @@
+@import "../../styles/index.scss";
+
 .background {
   max-width: 100%;
   height: 100vh;
+  @include horizontal();
+  
+  .containerAboutMe {
+    width: 50%;
+    @include center-flexbox();
+    
+    .subContainerAboutMe {
+      width: 80%;
+      
+      .header {
+        color: $primary-color;
+        font-size: 4rem;
+        
+        .headerDecoration {
+          color: $tertiary-color;
+        }
+      }
+
+      .subHeader {
+        color: $primary-color;
+        font-size: 2rem;
+        margin-top: 2rem;
+        font-weight: 400;
+      }
+      
+      .text {
+        margin-top: 2rem;
+        width: 90%;
+        line-height: 1.5rem;
+        color: $primary-color;
+        font-weight: 400;
+
+        .textDecoration {
+          color: $tertiary-color;
+          font-weight: 600;
+        }
+      }
+      
+      .containerButtons {
+        margin-top: 2rem;
+
+        .linkedinIcon {
+          width: 3rem;
+          height: 3rem;
+          color: $primary-color;
+          cursor: pointer;
+
+          @include transition();
+        }
+
+        .linkedinIcon:hover {
+          color: $secondary-color;
+        }
+        
+        .button {
+          appearance: none;
+          cursor: pointer;
+          @include default-inputs();
+        }
+      }
+    }
+  }
+  
+  .containerImage {
+    @include center-flexbox();
+
+    .image {
+      width: 80%;
+    }
+  }
 }

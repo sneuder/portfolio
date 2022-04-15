@@ -16,17 +16,19 @@ const AboutMe = () => {
           <h3 className={style.subHeader}>Full Stack Web Developer</h3>
           <p className={style.text}>
             Hey, are looking for a web developer to build your{" "}
-            <span>Brand and grow your business?</span> Let's shake hands with
+            <span className={style.textDecoration}>Brand and grow your business?</span> Let's shake hands with
             me.
           </p>
           <div className={style.containerButtons}>
             <FontAwesomeIcon className={style.linkedinIcon} icon={faLinkedin} />
-            <button className={style.hireMeButton}>Hire me</button>
+            <button className={style.button}>Hire me</button>
           </div>
         </div>
       </div>
 
-      <div className={style.containerImage}></div>
+      <div className={style.containerImage}>
+        <img className={style.image} src={require("../../assets/aboutme.png")} alt="about me" />
+      </div>
     </div>
   );
 };
