@@ -14,6 +14,19 @@ body {
   font-family: "Montserrat";
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+ 
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+  border-radius: 5px;
+}
+
 .app {
   width: 100%;
 }
