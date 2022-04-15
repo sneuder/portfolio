@@ -2,6 +2,7 @@ import React from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import style from "./about_me.module.scss";
 
 const AboutMe = () => {
@@ -21,7 +22,10 @@ const AboutMe = () => {
           </p>
           <div className={style.containerButtons}>
             <FontAwesomeIcon className={style.linkedinIcon} icon={faLinkedin} />
-            <button className={style.button}>Hire me</button>
+            <div className={style.button}>
+              <p className={style.buttonText}>Hire me</p>
+              <FontAwesomeIcon className={style.arrowIcon} icon={faArrowRight}/>
+            </div>
           </div>
         </div>
       </div>

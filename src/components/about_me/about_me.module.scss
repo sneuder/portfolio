@@ -4,18 +4,18 @@
   max-width: 100%;
   height: 100vh;
   @include horizontal();
-  
+
   .containerAboutMe {
     width: 50%;
     @include center-flexbox();
-    
+
     .subContainerAboutMe {
       width: 80%;
-      
+
       .header {
         color: $primary-color;
         font-size: 4rem;
-        
+
         .headerDecoration {
           color: $tertiary-color;
         }
@@ -27,7 +27,7 @@
         margin-top: 2rem;
         font-weight: 400;
       }
-      
+
       .text {
         margin-top: 2rem;
         width: 90%;
@@ -40,9 +40,11 @@
           font-weight: 600;
         }
       }
-      
+
       .containerButtons {
         margin-top: 2rem;
+        @include horizontal();
+        justify-content: flex-start;
 
         .linkedinIcon {
           width: 3rem;
@@ -56,16 +58,34 @@
         .linkedinIcon:hover {
           color: $secondary-color;
         }
-        
+
         .button {
-          appearance: none;
+          background: $secondary-color;
+          color: $quaternary-color;
+          font-weight: 600;
+          margin-left: 2rem;
           cursor: pointer;
           @include default-inputs();
+          @include center-flexbox();
+          @include transition();
+
+          .buttonText {
+            margin-left: 1rem;
+          }
+
+          .arrowIcon {
+            margin: 0 1rem;
+          }
+          
+        }
+
+        .button:hover {
+          background: $primary-color;
         }
       }
     }
   }
-  
+
   .containerImage {
     @include center-flexbox();
 
