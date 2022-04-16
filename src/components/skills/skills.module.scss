@@ -47,7 +47,6 @@
   }
 
   .containerImage {
-    width: 50%;
     @include center-flexbox();
     .img {
       width: 90%;

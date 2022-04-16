@@ -4,7 +4,7 @@ import style from "./skills.module.scss";
 const Skills = () => {
   const skills = [
     "JavaScript",
-    "React",
+    "ReactJS",
     "HTML",
     "CSS",
     "SASS",
@@ -29,7 +29,7 @@ const Skills = () => {
         </div>
         <div className={style.containerSkills}>
           {skills.map((skill) => ( 
-            <div className={style.containerSkill}>
+            <div key={skill} className={style.containerSkill}>
               <p className={style.skill}>{skill}</p>
             </div>
           ))}
