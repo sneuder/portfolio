@@ -1,9 +1,7 @@
 @import "../../styles/index.scss";
 
 .background {
-  max-width: 100%;
-  height: 100vh;
-  padding: 3rem;
+  @include backgroundDefault();
   @include horizontal();
 
   .containerAboutMe {
