@@ -12,7 +12,7 @@ const Projects = () => {
           Some of my <span className={style.headerDecoration}>work</span>
         </h1>
         <p className={style.text}>
-          As a full stack web developer I have completing some personal projects
+          As a full stack web developer I have completed some personal projects
         </p>
         <div className={style.linkRepositoriesContainer}>
           <FontAwesomeIcon className={style.gitHubIcon} icon={faGithubSquare} />
