@@ -3,6 +3,7 @@
 .background {
   max-width: 100%;
   height: 100vh;
+  padding: 3rem;
   @include horizontal();
 
   .containerAboutMe {

@@ -16,7 +16,7 @@ const Projects = () => {
         </p>
         <div className={style.linkRepositoriesContainer}>
           <FontAwesomeIcon className={style.gitHubIcon} icon={faGithubSquare} />
-          <p>Check repositories</p>
+          <p className={style.linkRepositories}>Check repositories</p>
         </div>
       </div>
     </div>
