@@ -57,7 +57,7 @@ const Contact = () => {
         </form>
       </div>
       <div className={style.imageContainer}>
-        <img src={require("../../assets/contact.png")} alt="contact" />
+        <img className={style.img} src={require("../../assets/contact.png")} alt="contact" />
       </div>
     </div>
   );
