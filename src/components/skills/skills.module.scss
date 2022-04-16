@@ -1,0 +1,56 @@
+@import "../../styles/index.scss";
+
+.background {
+  @include backgroundDefault();
+  @include horizontal();
+
+  .containerInfo {
+    width: 50%;
+
+    .containerHeader {
+
+      .header {
+        @include header();
+
+        .headerDecoration {
+          @include headerDecoration();
+        }
+      }
+
+      .text {
+        @include text();
+        margin-top: 1rem;
+      }
+    }
+
+    .containerSkills {
+      @include horizontal();
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .containerSkill {
+        @include horizontal();
+        @include default-inputs();
+        @include center-flexbox();
+        
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
+        padding: 1rem 1.5rem;
+        background-color: $primary-color;
+
+        .skill {
+          color: $quaternary-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .containerImage {
+    width: 50%;
+    @include center-flexbox();
+    .img {
+      width: 90%;
+    }
+  }
+}
