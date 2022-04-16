@@ -7,7 +7,7 @@ import style from "./about_me.module.scss";
 
 const AboutMe = () => {
   return (
-    <div className={style.background}>
+    <div className={style.background} id="aboutme">
       <div className={style.containerAboutMe}>
         <div className={style.subContainerAboutMe}>
           <h2 className={style.header}>Hi,</h2>

@@ -17,7 +17,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className={style.background}>
+    <div className={style.background} id="skills">
       <div className={style.containerInfo}>
         <div className={style.containerHeader}>
           <h2 className={style.header}>

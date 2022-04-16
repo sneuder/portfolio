@@ -29,7 +29,7 @@
     }
   }
 
-  .navItemsContainer {
+  .navItemsContainer, .navItemsActive {
     height: 100%;
     list-style: none;
     
@@ -49,6 +49,10 @@
     }
 
     .navItems:hover {
+      color: $secondary-color;
+    }
+
+    .navItemsActive {
       color: $secondary-color;
     }
   }

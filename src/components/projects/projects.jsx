@@ -6,7 +6,7 @@ import style from "./projects.module.scss";
 
 const Projects = () => {
   return (
-    <div className={style.background}>
+    <div className={style.background} id="projects">
       <div className={style.headerContainer}>
         <h1 className={style.header}>
           Some of my <span className={style.headerDecoration}>work</span>

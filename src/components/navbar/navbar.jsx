@@ -1,4 +1,5 @@
 import React from "react";
+import { NavHashLink as Link } from "react-router-hash-link";
 import style from "./navbar.module.scss";
 
 const Navbar = () => {
@@ -11,11 +12,31 @@ const Navbar = () => {
       </div>
 
       <ul className={style.navItemsContainer}>
-        <li className={style.navItems}>About Me</li>
-        <li className={style.navItems}>Projects</li>
-        <li className={style.navItems}>My CV</li>
-        <li className={style.navItems}>Skills</li>
-        <li className={style.navItems}>Contact</li>
+        <li>
+          <Link className={style.navItems} smooth to="#aboutme">
+            About Me
+          </Link>
+        </li>
+        <li>
+          <Link className={style.navItems} smooth to="#projects">
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link className={style.navItems} smooth to="#skills">
+            My CV
+          </Link>
+        </li>
+        <li>
+          <Link className={style.navItems} smooth to="#skills">
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link className={style.navItems} smooth to="#contact">
+            Contact
+          </Link>
+        </li>
       </ul>
     </nav>
   );
