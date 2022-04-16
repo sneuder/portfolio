@@ -5,6 +5,7 @@ const Skills = () => {
   const skills = [
     "JavaScript",
     "ReactJS",
+    "Redux",
     "HTML",
     "CSS",
     "SASS",
@@ -13,7 +14,7 @@ const Skills = () => {
     "Express",
     "Postgres",
     "Sequelize",
-    "Web design"
+    "Web design",
   ];
 
   return (
@@ -28,7 +29,7 @@ const Skills = () => {
           </p>
         </div>
         <div className={style.containerSkills}>
-          {skills.map((skill) => ( 
+          {skills.map((skill) => (
             <div key={skill} className={style.containerSkill}>
               <p className={style.skill}>{skill}</p>
             </div>
@@ -36,7 +37,11 @@ const Skills = () => {
         </div>
       </div>
       <div className={style.containerImage}>
-        <img className={style.img} src={require("../../assets/skills.png")} alt="skills" />
+        <img
+          className={style.img}
+          src={require("../../assets/skills.png")}
+          alt="skills"
+        />
       </div>
     </div>
   );
