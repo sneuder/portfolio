@@ -1,5 +1,13 @@
 import React from "react";
+
 import style from "./contact.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faAt,
+  faBook,
+  faMessage,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -16,6 +24,7 @@ const Contact = () => {
         </div>
         <form className={style.formContainer}>
           <div className={style.containerInput}>
+            <FontAwesomeIcon className={style.icon} icon={faUser} />
             <input
               className={style.input}
               type="text"
@@ -24,6 +33,7 @@ const Contact = () => {
           </div>
 
           <div className={style.containerInput}>
+            <FontAwesomeIcon className={style.icon} icon={faAt} />
             <input
               className={style.input}
               type="email"
@@ -32,6 +42,7 @@ const Contact = () => {
           </div>
 
           <div className={style.containerInput}>
+            <FontAwesomeIcon className={style.icon} icon={faBook} />
             <input
               className={style.input}
               type="text"
@@ -40,8 +51,9 @@ const Contact = () => {
           </div>
 
           <div className={style.containerInput}>
+            <FontAwesomeIcon className={style.icon} icon={faMessage} />
             <textarea
-              className={style.input}
+              className={style.inputArea}
               type="text"
               placeholder="Message..."
             ></textarea>
@@ -49,7 +61,7 @@ const Contact = () => {
 
           <div className={style.containerInput}>
             <input
-              className={style.input}
+              className={style.inputSubmit}
               type="submit"
               placeholder="Submit"
             />
@@ -57,7 +69,11 @@ const Contact = () => {
         </form>
       </div>
       <div className={style.imageContainer}>
-        <img className={style.img} src={require("../../assets/contact.png")} alt="contact" />
+        <img
+          className={style.img}
+          src={require("../../assets/contact.png")}
+          alt="contact"
+        />
       </div>
     </div>
   );
