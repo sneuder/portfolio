@@ -1,5 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import swal from 'sweetalert';
+
 
 import style from "./contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,14 +13,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs.sendForm(
+    swal("Thank you for your message!", "", "success");
+    
+    await emailjs.sendForm(
       "service_fib3fdv",
       "template_yhvx24m",
       e.target,
       "NwUhDkym5i8dnYX7u"
     );
+    e.target.reset();
   };
 
   return (
