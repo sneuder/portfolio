@@ -15,8 +15,23 @@ const Projects = () => {
           As a full stack web developer I have completed some personal projects
         </p>
         <div className={style.linkRepositoriesContainer}>
-          <FontAwesomeIcon className={style.gitHubIcon} icon={faGithubSquare} />
-          <p className={style.linkRepositories}>Check repositories</p>
+          <a
+            href="https://github.com/sneuder"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              href="https://github.com/sneuder"
+              className={style.gitHubIcon}
+              icon={faGithubSquare}
+            />
+          </a>
+          <a
+            className={style.linkRepositories}
+            href="https://github.com/sneuder"
+            target="_blank"
+          >
+            Check repositories
+          </a>
         </div>
       </div>
     </div>
