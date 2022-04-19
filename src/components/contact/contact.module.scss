@@ -88,4 +88,15 @@
       width: 100%;
     }
   }
+
+  @media screen and (max-width: 930px) {
+
+    .contactContainer {
+      width: 100%;
+    }
+
+    .imageContainer {
+      display: none;
+    }
+  }
 }
