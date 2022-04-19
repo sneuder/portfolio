@@ -92,4 +92,15 @@
       width: 90%;
     }
   }
+
+  @media screen and (max-width: 930px) {
+
+    .containerAboutMe {
+      width: 100%;
+    }
+
+    .containerImage {
+      display: none;
+    }
+  }
 }
