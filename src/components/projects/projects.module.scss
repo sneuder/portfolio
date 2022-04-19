@@ -42,4 +42,14 @@
       }
     }
   }
+
+  @media screen and (max-width: 930px) {
+
+    .headerContainer {
+
+      .text {
+        width: 100%;
+      }
+    }
+  }
 }
