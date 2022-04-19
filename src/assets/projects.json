@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Movie app",
+    "img": "movie-app.png",
+    "link": "https://movie-app-seven-chi.vercel.app/",
+    "description": "This app shows popular movies in the moment taking into consideration an API. It is built with React and Styled Components with sass. It is possible to add favorites, remove them, and search by name."
+  }
+]
