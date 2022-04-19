@@ -21,7 +21,9 @@ const AboutMe = () => {
             me.
           </p>
           <div className={style.containerButtons}>
-            <FontAwesomeIcon className={style.linkedinIcon} icon={faLinkedin} />
+            <a href="https://www.linkedin.com/in/esneider-fullstackdeveloper/" target="_blank">
+              <FontAwesomeIcon className={style.linkedinIcon} icon={faLinkedin} />
+            </a>
             <div className={style.button}>
               <p className={style.buttonText}>Hire me</p>
               <FontAwesomeIcon className={style.arrowIcon} icon={faArrowRight}/>
