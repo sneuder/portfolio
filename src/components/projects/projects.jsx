@@ -5,6 +5,7 @@ import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import style from "./projects.module.scss";
 
 const Projects = () => {
+  const data = require("../../assets/projects.json");
   return (
     <div className={style.background} id="projects">
       <div className={style.headerContainer}>
@@ -15,10 +16,7 @@ const Projects = () => {
           As a full stack web developer I have completed some personal projects
         </p>
         <div className={style.linkRepositoriesContainer}>
-          <a
-            href="https://github.com/sneuder"
-            target="_blank"
-          >
+          <a href="https://github.com/sneuder" target="_blank">
             <FontAwesomeIcon
               href="https://github.com/sneuder"
               className={style.gitHubIcon}
@@ -33,6 +31,26 @@ const Projects = () => {
             Check repositories
           </a>
         </div>
+      </div>
+      <div className={style.containerProjects}>
+        {data.map((project) => {
+          console.log(typeof project.img);
+          return (
+            <div className={style.containerProject}>
+              <a href={project.link} target="_blank">
+                <img
+                  className={style.img}
+                  src={require(`../../assets/img-project/${project.img}`)}
+                  alt=""
+                />
+              </a>
+              <div className={style.projectInfo}>
+                <h3 className={style.headerProject}>{project.name}</h3>
+                <p className={style.textProject}>{project.description}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
