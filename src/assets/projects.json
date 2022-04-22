@@ -4,5 +4,12 @@
     "img": "movie-app.png",
     "link": "https://movie-app-seven-chi.vercel.app/",
     "description": "This app shows popular movies in the moment taking into consideration an API. It is built with React and Styled Components with sass. It is possible to add favorites, remove them, and search by name."
+  },
+
+  {
+    "name": "Dog app",
+    "img": "dog-app.png",
+    "link": "https://dog-app-seven.vercel.app/",
+    "description": "This app consumes an api which contains information about dogs. User can create dogs and filter and order them by temperament, weight, and alphabetically. It is possible to see what dogs are from API and Data Base. Besides, user can search dog with the search bar."
   }
 ]
