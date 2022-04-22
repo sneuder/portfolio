@@ -23,9 +23,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link className={style.navItems} smooth to="#skills">
+          <a className={style.navItems} href="https://drive.google.com/file/d/1YtbDeJZVxyV4qD_blFgXHzfq8rgNUIUc/view?usp=sharing" target="_blank">
             My CV
-          </Link>
+          </a>
         </li>
         <li>
           <Link className={style.navItems} smooth to="#skills">
