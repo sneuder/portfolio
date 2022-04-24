@@ -1,5 +1,12 @@
 [
   {
+    "name": "Dog app",
+    "img": "dog-app.png",
+    "link": "https://dog-app-seven.vercel.app/",
+    "description": "This app consumes an api which contains information about dogs. User can create dogs and filter and order them by temperament, weight, and alphabetically. It is possible to see what dogs are from API and Data Base. Besides, user can search dog with the search bar."
+  },
+
+  {
     "name": "Movie app",
     "img": "movie-app.png",
     "link": "https://movie-app-seven-chi.vercel.app/",
@@ -7,9 +14,11 @@
   },
 
   {
-    "name": "Dog app",
-    "img": "dog-app.png",
-    "link": "https://dog-app-seven.vercel.app/",
-    "description": "This app consumes an api which contains information about dogs. User can create dogs and filter and order them by temperament, weight, and alphabetically. It is possible to see what dogs are from API and Data Base. Besides, user can search dog with the search bar."
+    "name": "Todo app",
+    "img": "todo-app.png",
+    "link": "https://todo-app-five-rose.vercel.app/",
+    "description": "It is built using ReactJS, Redux, and Styled Components. It is possible to add tasks, complete them, and remove them. Besides, user can see the tasks in the list and in the completed list. It is a perfect app to be productive in your day."
   }
+
 ]
+
