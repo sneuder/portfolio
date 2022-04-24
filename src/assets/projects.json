@@ -7,6 +7,13 @@
   },
 
   {
+    "name": "Posh Boutique",
+    "img": "posh.png",
+    "link": "https://frontend-five-gules.vercel.app/",
+    "description": "This is an E-commerce which was built with a team of 8 members. User can see clothe products, buy them, add them to the cart, sign in, sign up, and checkout. Besides, user can search clothe with the search bar. There is an administrator panel where user can add new products, delete products, and edit them."
+  },
+
+  {
     "name": "Movie app",
     "img": "movie-app.png",
     "link": "https://movie-app-seven-chi.vercel.app/",
@@ -21,4 +28,5 @@
   }
 
 ]
+
 
