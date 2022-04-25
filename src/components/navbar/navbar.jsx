@@ -23,7 +23,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <a className={style.navItems} href="https://drive.google.com/file/d/1YtbDeJZVxyV4qD_blFgXHzfq8rgNUIUc/view?usp=sharing" target="_blank">
+          <a className={style.navItems} href="https://drive.google.com/file/d/1n9srZYUShhNjkI3BDSOcECASz7lQ_1j7/view?usp=sharing" target="_blank">
             My CV
           </a>
         </li>
