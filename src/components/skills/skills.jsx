@@ -14,6 +14,7 @@ const Skills = () => {
     "Express",
     "Postgres",
     "Sequelize",
+    "Testing",
     "Web design",
   ];
 
