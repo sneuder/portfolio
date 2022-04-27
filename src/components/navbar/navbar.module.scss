@@ -1,7 +1,7 @@
 @import "../../styles/index.scss";
 
 .background {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -68,6 +68,7 @@
     .bars {
       display: flex;
       @include sizeIcons();
+      padding: 0rem 1rem;
     }
 
     .navItemsContainer {
