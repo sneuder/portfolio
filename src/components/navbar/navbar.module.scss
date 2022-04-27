@@ -29,10 +29,15 @@
     }
   }
 
-  .navItemsContainer, .navItemsActive {
+  .bars {
+    display: none;
+  }
+
+  .navItemsContainer,
+  .navItemsActive {
     height: 100%;
     list-style: none;
-    
+
     @include horizontal();
     align-items: center;
 
@@ -58,3 +63,15 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .background {
+    .bars {
+      display: flex;
+      @include sizeIcons();
+    }
+
+    .navItemsContainer {
+      display: none;
+    }
+  }
+}

@@ -1,5 +1,8 @@
 import React from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import style from "./navbar.module.scss";
 
 const Navbar = () => {
@@ -11,6 +14,7 @@ const Navbar = () => {
         </p>
       </div>
 
+      <FontAwesomeIcon icon={faBars} className={style.bars} />
       <ul className={style.navItemsContainer}>
         <li>
           <Link className={style.navItems} smooth to="#aboutme">
