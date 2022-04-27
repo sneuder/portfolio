@@ -47,3 +47,10 @@
   font-weight: 400;
   margin-top: 2rem;
 }
+
+@mixin sizeIcons(){
+  width: $icon-size;
+  height: $icon-size;
+  color: $primary-color;
+  margin: 0 1rem;
+}
