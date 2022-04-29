@@ -16,6 +16,7 @@ const BurgerMenu = ({ open, setOpen }) => {
       >
         <div className={style.container}>
           <NavItems />
+          <img className={style.img} src={require("../../assets/aboutme.png")} alt="logo" />
         </div>
       </div>
     );
