@@ -13,7 +13,6 @@
   animation: appear 0.3s ease 0.1s forwards;
 
   @include center-flexbox();
-  justify-content: flex-end;
 
   @keyframes appear{
     from {
@@ -26,10 +25,11 @@
 
   .container {
     opacity: 0;
-    width: 40%;
-    height: 100%;
-    transform: translate(100%, 0);
+    width: 45%;
+    padding-bottom: 0.5rem;
+    height: auto;
     background-color: $quaternary-color;
+    border-radius:  $border-radius;
 
     animation: appear 0.3s ease 0.1s forwards;
 

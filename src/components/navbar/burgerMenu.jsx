@@ -1,5 +1,6 @@
 import React from "react";
 
+import Branch from "./branch";
 import NavItems from "./navItems";
 
 import style from "./burgerMenu.module.scss";
@@ -15,8 +16,8 @@ const BurgerMenu = ({ open, setOpen }) => {
         }}
       >
         <div className={style.container}>
+          <Branch />
           <NavItems />
-          <img className={style.img} src={require("../../assets/aboutme.png")} alt="logo" />
         </div>
       </div>
     );

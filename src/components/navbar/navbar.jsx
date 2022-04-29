@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import Branch from "./branch";
 import NavItems from "./navItems";
 import BurgerMenu from "./burgerMenu";
 
@@ -12,11 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className={style.background} resize={() => {}}>
-      <div className={style.branchContainer}>
-        <p className={style.branchName}>
-          Sne<span className={style.branchDecoration}>uder</span>
-        </p>
-      </div>
+      <Branch />
 
       <FontAwesomeIcon
         icon={faBars}
