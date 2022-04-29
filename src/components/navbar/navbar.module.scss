@@ -1,7 +1,7 @@
 @import "../../styles/index.scss";
 
 .background {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -69,10 +69,19 @@
       display: flex;
       @include sizeIcons();
       padding: 0rem 1rem;
+      cursor: pointer;
+    }
+
+    .containerItems {
+      display: none;
     }
 
     .navItemsContainer {
-      display: none;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
+    
+
   }
 }

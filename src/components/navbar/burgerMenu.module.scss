@@ -1,0 +1,46 @@
+@import "../../styles/index.scss";
+
+.background {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+
+  animation: appear 0.3s ease 0.1s forwards;
+
+  @include center-flexbox();
+  justify-content: flex-end;
+
+  @keyframes appear{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container {
+    opacity: 0;
+    width: 50%;
+    height: 100%;
+    transform: translate(100%, 0);
+    background-color: $quaternary-color;
+
+    animation: appear 0.3s ease 0.1s forwards;
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}
