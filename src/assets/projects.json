@@ -25,6 +25,13 @@
     "img": "todo-app.png",
     "link": "https://todo-app-five-rose.vercel.app/",
     "description": "It is built using ReactJS, Redux, and Styled Components. It is possible to add tasks, complete them, and remove them. Besides, user can see the tasks in the list and in the completed list. It is a perfect app to be productive in your day."
+  },
+
+  {
+    "name": "Instagram Post",
+    "img": "post-instagram.png",
+    "link": "https://instagrampost.surge.sh/",
+    "description": "This is project is built only with HTML, CSS, and JavaScript. It is a simple app similar to an Instagram Post. it is possible to make comments and likes. Pictures and Users' name are taken from an API."
   }
 
 ]
