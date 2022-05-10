@@ -14,6 +14,13 @@
   },
 
   {
+    "name": "Rick and Morty",
+    "img": "rick-morty.png",
+    "link": "https://sneuder.github.io/rick_and_morty_random/",
+    "description": "It is a website which was built with ReactJS and Styled Components. This uses GraphQL to fetch data from an api. User can see characters of Rick and Morty, and can have a history of their appearance. When user clicks on the button it will show a random character."
+  },
+
+  {
     "name": "Movie app",
     "img": "movie-app.png",
     "link": "https://movie-app-seven-chi.vercel.app/",
@@ -31,7 +38,7 @@
     "name": "Instagram Post",
     "img": "post-instagram.png",
     "link": "https://instagrampost.surge.sh/",
-    "description": "This is project is built only with HTML, CSS, and JavaScript. It is a simple app similar to an Instagram Post. it is possible to make comments and likes. Pictures and Users' name are taken from an API."
+    "description": "This is project is built only with HTML, CSS, and JavaScript. It is a simple app similar to an Instagram Post. It is possible to make comments and likes. Pictures and Users' name are taken from an API. The same happens with the users' comments."
   }
 
 ]
