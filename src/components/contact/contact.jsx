@@ -15,6 +15,10 @@ import {
 const Contact = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
+
+    let information = Object.values(e.target);
+    if(information.some(info => info.value === "")) return swal("Error", "Please fill all the fields", "error");
+
     swal("Thank you for your message!", "", "success");
     
     await emailjs.sendForm(
@@ -83,6 +87,7 @@ const Contact = () => {
             <input
               className={style.inputSubmit}
               type="submit"
+              value="send"
               placeholder="Submit"
             />
           </div>
