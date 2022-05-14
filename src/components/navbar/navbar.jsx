@@ -12,7 +12,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className={style.background} resize={() => {}}>
+    <nav className={style.background}>
       <Branch />
 
       <FontAwesomeIcon

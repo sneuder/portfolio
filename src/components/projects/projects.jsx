@@ -34,9 +34,8 @@ const Projects = () => {
       </div>
       <div className={style.containerProjects}>
         {data.map((project) => {
-          console.log(typeof project.img);
           return (
-            <div className={style.containerProject}>
+            <div className={style.containerProject} key={project.id}>
               <a href={project.link} target="_blank">
                 <img
                   className={style.img}
