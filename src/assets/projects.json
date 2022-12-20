@@ -36,7 +36,7 @@
     "name": "Chaira Login",
     "img": "login-chaira.png",
     "link": "https://chaira-login.vercel.app/",
-    "description": "This app shows popular movies in the moment taking into consideration an API. It is built with React and Styled Components with sass. It is possible to add favorites, remove them, and search by name. Besides, user can read the reviews of some movies."
+    "description": "This is a proposal for Amazonia University. It has a login which needs some changes asked for by students. So, I decided to make those changes and show this proposal to university (pending state). It is built with ReactJS, Styled Components, and clear architecture."
   },
 
   {
