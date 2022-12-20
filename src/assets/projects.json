@@ -1,33 +1,41 @@
 [
   {
     "id": "1",
-    "name": "Dog app",
+    "name": "Puppies",
     "img": "dog-app.png",
-    "link": "https://dog-app-seven.vercel.app/",
+    "link": "https://puppies-fronted.vercel.app/",
     "description": "This app consumes an api which contains information about dogs. User can create dogs and filter and order them by temperament, weight, and alphabetically. It is possible to see what dogs are from API and Data Base. Besides, user can search dog with the search bar."
   },
 
   {
-    "id": "2",
-    "name": "Posh Boutique",
-    "img": "posh.png",
-    "link": "https://frontend-five-gules.vercel.app/",
-    "description": "This is an E-commerce which was built with a team of 8 members. User can see clothe products, buy them, add them to the cart, sign in, sign up, and checkout. Besides, user can search clothe with the search bar. There is an administrator panel where user can add new products, delete products, and edit them."
+    "id": "8",
+    "name": "Service Puppie",
+    "img": "puppies-service.jpg",
+    "link": "https://github.com/sneuder/puppies-backend",
+    "description": "It is service where the Puppies app get the information to show up on screen. It has functions related to CRUD. The technologies used for this service are NodeJS, Sequelize, and JWT. It has clean architecture and scalable."
   },
 
   {
     "id": "3",
     "name": "Rick and Morty",
     "img": "rick-morty.png",
-    "link": "https://sneuder.github.io/rick_and_morty_random/",
+    "link": "https://rick-and-morty-random.vercel.app/",
     "description": "It is a website which was built with ReactJS and Styled Components. This uses GraphQL to fetch data from an api. User can see characters of Rick and Morty, and can have a history of their appearance. When user clicks on the button it will show a random character."
   },
 
   {
-    "id": "4",
-    "name": "Movie app",
-    "img": "movie-app.png",
-    "link": "https://movie-app-seven-chi.vercel.app/",
+    "id": "3",
+    "name": "Pokemon Service",
+    "img": "pokemon-service.jpg",
+    "link": "https://github.com/sneuder/pokemon-backend",
+    "description": "It is a service built with NodeJS and TypeScript, MongoDB, using Mongoose. This service provides information for the Pokemon app. It is possible to create, delete, update, and get Pokemons from the DataBase (MongoDB). "
+  },
+
+  {
+    "id": "7",
+    "name": "Chaira Login",
+    "img": "login-chaira.png",
+    "link": "https://chaira-login.vercel.app/",
     "description": "This app shows popular movies in the moment taking into consideration an API. It is built with React and Styled Components with sass. It is possible to add favorites, remove them, and search by name. Besides, user can read the reviews of some movies."
   },
 
@@ -40,11 +48,11 @@
   },
 
   {
-    "id": "6",
-    "name": "Instagram Post",
-    "img": "post-instagram.png",
-    "link": "https://instagrampost.surge.sh/",
-    "description": "This is project is built only with HTML, CSS, and JavaScript. It is a simple app similar to an Instagram Post. It is possible to make comments and likes. Pictures and Users' name are taken from an API. The same happens with the users' comments."
+    "id": "2",
+    "name": "Posh Boutique",
+    "img": "posh.png",
+    "link": "https://frontend-five-gules.vercel.app/",
+    "description": "This is an E-commerce which was built with a team of 8 members. User can see clothe products, buy them, add them to the cart, sign in, sign up, and checkout. Besides, user can search clothe with the search bar. There is an administrator panel where user can add new products, delete products, and edit them."
   }
 
 ]
