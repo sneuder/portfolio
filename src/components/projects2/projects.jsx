@@ -16,7 +16,7 @@ const Projects = () => {
           As a full stack web developer I have completed some personal projects
         </p>
         <div className={style.linkRepositoriesContainer}>
-          <a href="https://github.com/sneuder" target="_blank">
+          <a href="https://github.com/sneuder" target="_blank" rel="noreferrer">
             <FontAwesomeIcon
               href="https://github.com/sneuder"
               className={style.gitHubIcon}
@@ -26,31 +26,13 @@ const Projects = () => {
           <a
             className={style.linkRepositories}
             href="https://github.com/sneuder"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             Check repositories
           </a>
         </div>
       </div>
-      <div className={style.containerProjects}>
-        {data.map((project) => {
-          return (
-            <div className={style.containerProject} key={project.id}>
-              <a href={project.link} target="_blank">
-                <img
-                  className={style.img}
-                  src={require(`../../assets/img-project/${project.img}`)}
-                  alt=""
-                />
-              </a>
-              <div className={style.projectInfo}>
-                <h3 className={style.headerProject}>{project.name}</h3>
-                <p className={style.textProject}>{project.description}</p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      
     </div>
   );
 };
