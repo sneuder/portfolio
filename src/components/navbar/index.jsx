@@ -8,6 +8,7 @@ import NavItems from "../../common/navItems";
 const Navbar = () => {
   return (
     <nav>
+      <div className={style.containerNav}>
       <Modal />
       <Branch />
       <div className={style.containerItems}>
@@ -15,6 +16,7 @@ const Navbar = () => {
       </div>
       <div className={style.containerBurguer}>
         <Burguer />
+      </div>
       </div>
     </nav>
   );

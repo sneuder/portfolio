@@ -11,13 +11,20 @@ nav {
   background: $quaternary-color;
   z-index: 1;
 
-  @include horizontal();
-  align-items: center;
+  
+  .containerNav {
+    margin: auto;
+    height: 100%;
+    max-width: 1280px;
+    @include horizontal();
+    align-items: center;
+  }
+  
+  .containerBurguer {
+    display: none;
+  }
 }
 
-.containerBurguer {
-  display: none;
-}
 
 @media screen and (max-width: 900px) {
     .containerItems {

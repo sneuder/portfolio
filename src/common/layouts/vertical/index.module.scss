@@ -1,4 +1,6 @@
 .verticalSection {
+  max-width: 1280px;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
