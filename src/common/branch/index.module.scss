@@ -1,7 +1,6 @@
 @import "../../styles/index.scss";
 
 .branchContainer {
-  @include default-inputs();
   @include center-flexbox();
 
   & p {

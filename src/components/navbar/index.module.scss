@@ -1,0 +1,30 @@
+@import "../../styles/index.scss";
+
+nav {
+  padding: 0 2rem;
+  width: 100vw;
+  height: 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  position: fixed;
+  left: 0;
+  background: $quaternary-color;
+  z-index: 1;
+
+  @include horizontal();
+  align-items: center;
+}
+
+.containerBurguer {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .containerItems {
+      display: none;
+    }
+
+    .containerBurguer {
+      display: block;
+    }
+}

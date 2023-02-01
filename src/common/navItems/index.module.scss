@@ -1,0 +1,28 @@
+@import "../../styles/index.scss";
+
+.navItemsContainer,
+  .navItemsActive {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    & a {
+      color: $primary-color;
+      font-weight: 600;
+      cursor: pointer;
+
+      @include default-inputs();
+      @include center-flexbox();
+      @include transition();
+    }
+
+    & a:hover {
+      color: $secondary-color;
+    }
+
+    .navItemsActive {
+      color: $secondary-color;
+    }
+  }

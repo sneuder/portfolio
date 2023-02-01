@@ -1,4 +1,4 @@
-import style from "./navbar.module.scss";
+import style from "./index.module.scss";
 
 const Branch = () => {
   return (
