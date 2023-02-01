@@ -23,6 +23,7 @@
   }
 
   & textarea {
+    resize: vertical;
     padding-top: 1rem;
     min-height: 100px;
     max-width: 100%;
