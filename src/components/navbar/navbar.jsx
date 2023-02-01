@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import Branch from "./branch";
 import NavItems from "./navItems";
 import BurgerMenu from "./burgerMenu";
 
@@ -13,7 +12,6 @@ const Navbar = () => {
 
   return (
     <nav className={style.background}>
-      <Branch />
 
       <FontAwesomeIcon
         icon={faBars}
