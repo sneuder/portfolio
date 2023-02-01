@@ -1,10 +1,10 @@
 import style from './index.module.scss'
 
-const Image = () => {
+const Image = ({imageName}) => {
   return (
     <img
           className={style.img}
-          src={require("../../assets/contact.png")}
+          src={require(`../../assets/${imageName}.png`)}
           alt="contact"
         />
   )

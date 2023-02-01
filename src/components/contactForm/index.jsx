@@ -1,64 +1,35 @@
 import style from './index.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUser,
-  faAt,
-  faBook,
-  faMessage,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMessage, } from "@fortawesome/free-solid-svg-icons";
+
+import Input from '../../common/inputs/input';
+import inputInfo from '../../constants/inputInfo'
+import InputContainer from '../../common/layouts/inputContainer';
 
 const ContactForm = () => {
   return (
         <form className={style.formContainer} >
-          <div className={style.containerInput}>
-            <FontAwesomeIcon className={style.icon} icon={faUser} />
-            <input
-              className={style.input}
-              type="text"
-              name="name"
-              placeholder="Your name..."
-            />
-          </div>
+          {
+            inputInfo.map(info => <Input {...info}/>)
+          }
 
-          <div className={style.containerInput}>
-            <FontAwesomeIcon className={style.icon} icon={faAt} />
-            <input
-              className={style.input}
-              type="email"
-              name="fromEmail"
-              placeholder="Your email..."
-            />
-          </div>
-
-          <div className={style.containerInput}>
-            <FontAwesomeIcon className={style.icon} icon={faBook} />
-            <input
-              className={style.input}
-              type="text"
-              name="subject"
-              placeholder="Subject..."
-            />
-          </div>
-
-          <div className={style.containerInput}>
-            <FontAwesomeIcon className={style.icon} icon={faMessage} />
+          <InputContainer>
+            <FontAwesomeIcon icon={faMessage} />
             <textarea
-              className={style.inputArea}
               type="text"
               name="message"
               placeholder="Message..."
             ></textarea>
-          </div>
+          </InputContainer>
 
-          <div className={style.containerInput}>
+          <InputContainer>
             <input
-              className={style.inputSubmit}
               type="submit"
               value="Send"
               placeholder="Submit"
             />
-          </div>
-        </form>
+          </InputContainer>
+    </form>
   )
 }
 

@@ -2,7 +2,7 @@ import Horizontal from '../common/layouts/horizontal'
 import Vertical from '../common/layouts/vertical'
 import Title from '../common/title'
 import ContactForm from '../components/contactForm'
-import Image from '../components/Image'
+import Image from '../components/image'
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
       />
       <Horizontal>
         <ContactForm />
-        <Image />
+        <Image imageName="contact" />
       </Horizontal>
     </Vertical>
   )
