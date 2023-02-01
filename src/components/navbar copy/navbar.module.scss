@@ -1,0 +1,87 @@
+@import "../../styles/index.scss";
+
+.background {
+  width: 100vw;
+  height: 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  position: fixed;
+  background: $quaternary-color;
+  z-index: 1;
+
+  @include horizontal();
+  align-items: center;
+
+  .branchContainer {
+    margin: 0 1rem;
+
+    @include default-inputs();
+    @include center-flexbox();
+
+    .branchName {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $tertiary-color;
+
+      .branchDecoration {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .navItemsContainer,
+  .navItemsActive {
+    height: 100%;
+    list-style: none;
+
+    @include horizontal();
+    align-items: center;
+
+    .navItems {
+      margin: 0 1rem;
+      color: $primary-color;
+      font-weight: 600;
+      cursor: pointer;
+
+      @include default-inputs();
+      @include center-flexbox();
+      @include transition();
+      height: auto;
+    }
+
+    .navItems:hover {
+      color: $secondary-color;
+    }
+
+    .navItemsActive {
+      color: $secondary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .background {
+    .bars {
+      display: flex;
+      @include sizeIcons();
+      padding: 0rem 1rem;
+      cursor: pointer;
+    }
+
+    .containerItems {
+      display: none;
+    }
+
+    .navItemsContainer {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
+
+  }
+}

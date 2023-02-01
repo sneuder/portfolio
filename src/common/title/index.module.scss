@@ -1,0 +1,32 @@
+@import '../../styles/index.scss';
+
+.titleContainer {
+  & h2 {
+    font-size: 4rem;
+    color: $primary-color;
+  
+    & span {
+      color: $secondary-color;
+    }
+  }
+  
+  & p {
+    width: 35%;
+    line-height: 1.5rem;
+    color: $primary-color;
+    font-weight: 400;
+  }
+}
+
+
+@media screen and (max-width: 930px) {
+  .titleContainer p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .titleContainer p {
+    width: 100%;
+  }
+}
