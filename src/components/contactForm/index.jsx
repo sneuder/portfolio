@@ -1,6 +1,6 @@
 import style from './index.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMessage, } from "@fortawesome/free-solid-svg-icons";
+import { faMessage } from "@fortawesome/free-solid-svg-icons";
 
 import Input from '../../common/inputs/input';
 import inputInfo from '../../constants/inputInfo'

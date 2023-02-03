@@ -4,7 +4,7 @@ const Image = ({imageName}) => {
   return (
     <img
           className={style.img}
-          src={require(`../../assets/sections/${imageName}.png`)}
+          src={require(`../../assets/sections/${imageName}.svg`)}
           alt="contact"
         />
   )

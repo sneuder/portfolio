@@ -1,6 +1,10 @@
 @import '../../styles/index.scss';
 
 .titleContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+
   & h2 {
     font-size: 4rem;
     color: $primary-color;
@@ -9,8 +13,8 @@
       color: $secondary-color;
     }
   }
-  
-  & p {
+
+  & > p {
     width: 35%;
     line-height: 1.5rem;
     color: $primary-color;
@@ -20,13 +24,13 @@
 
 
 @media screen and (max-width: 930px) {
-  .titleContainer p {
+  .titleContainer > p {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .titleContainer p {
+  .titleContainer > p {
     width: 100%;
   }
 }

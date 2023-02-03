@@ -2,6 +2,7 @@ import linksPage from '../constants/linksPage'
 
 import Vertical from "../common/layouts/vertical"
 import ProjectsComponent from "../components/projects"
+import RepositoryButton from '../components/repositoryButton'
 import Title from "../common/title"
 
 const Projects = () => {
@@ -13,7 +14,9 @@ const Projects = () => {
       <Title
         title={title}
         description={text}
-      />
+      >
+        <RepositoryButton />
+      </Title>
       <ProjectsComponent />
     </Vertical>
   )
