@@ -9,6 +9,7 @@ const Input = ({type, name, placeholder, icon}) => {
           type={type}
           name={name}
           placeholder={placeholder}
+          required
         />
     </InputContainer>
   )

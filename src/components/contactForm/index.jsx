@@ -6,9 +6,13 @@ import Input from '../../common/inputs/input';
 import inputInfo from '../../constants/inputInfo'
 import InputContainer from '../../common/layouts/inputContainer';
 
+import useEmail from '../../hooks/useEmail';
+
 const ContactForm = () => {
+  const { sendEmail } = useEmail()
+
   return (
-        <form className={style.formContainer} >
+        <form className={style.formContainer} onSubmit={sendEmail}>
           {
             inputInfo.map(info => <Input {...info}/>)
           }
@@ -19,6 +23,7 @@ const ContactForm = () => {
               type="text"
               name="message"
               placeholder="Message..."
+              required
             ></textarea>
           </InputContainer>
 
