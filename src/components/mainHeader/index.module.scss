@@ -1,0 +1,29 @@
+@import "../../styles/index.scss";
+
+
+.mainHeaderContainer {
+  align-self: center;
+
+  & h1 {
+    color: $primary-color;
+    font-size: 4rem;
+
+  }
+
+  & span {
+    color: $tertiary-color;
+  }
+
+  & .role {
+    color: $primary-color;
+        font-size: 2rem;
+        font-weight: 400;
+  }
+
+  & .text {
+    width: 90%;
+    line-height: 1.5rem;
+    color: $primary-color;
+    font-weight: 400;
+  }
+}
