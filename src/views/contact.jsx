@@ -8,11 +8,14 @@ import ContactForm from '../components/contactForm'
 import Image from '../components/image'
 
 const Contact = () => {
+  const { sections } = require("../assets/data/index.json");
+  const {title, text} = sections.contact
+
   return (
     <Vertical idPage={linksPage.contact} >
       <Title
-        title="Contact me"
-        description="If you would like to type me a message, fill the form below, I will type you back"
+        title={title}
+        description={text}
       />
       <Horizontal>
         <ContactForm />

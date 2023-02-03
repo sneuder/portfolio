@@ -5,11 +5,14 @@ import ProjectsComponent from "../components/projects"
 import Title from "../common/title"
 
 const Projects = () => {
+  const { sections } = require("../assets/data/index.json");
+  const {title, text} = sections.projects
+
   return (
     <Vertical idPage={linksPage.projects}>
       <Title
-        title="Some of my work"
-        description="As a full stack web developer I have completed some personal projects"
+        title={title}
+        description={text}
       />
       <ProjectsComponent />
     </Vertical>

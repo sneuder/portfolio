@@ -1,16 +1,16 @@
 import style from "./index.module.scss";
 
 const Projects = () => {
-  const data = require("../../assets/projects.json");
+  const { projects } = require("../../assets/data/index.json");
 
   return (
     <div className={style.containerProjects}>
-      {data.map((project) => {
+      {projects.map((project) => {
         return (
           <div className={style.containerProject} key={project.id}>
             <a href={project.link} target="_blank" rel="noreferrer">
               <img
-                src={require(`../../assets/img-project/${project.img}`)}
+                src={require(`../../assets/projects/${project.img}`)}
                 alt=""
               />
             </a>

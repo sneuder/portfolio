@@ -2,6 +2,9 @@ import Vertical from '../../common/layouts/vertical'
 import style from './index.module.scss'
 
 const MainHeader = () => {
+  const { sections } = require("../../assets/data/index.json");
+  const { title, role, text } = sections.home
+
   return (
     <div className={style.mainHeaderContainer}>
       <Vertical>
@@ -9,10 +12,9 @@ const MainHeader = () => {
           Hi, <br />
           I'm <span>Esneider</span>
         </h1>
-        <p className={style.role}>Full Stack Web Developer</p>
+        <p className={style.role}>{role}</p>
         <p className={style.text}>
-          Hey, are looking for a web developer to build your Brand and grow your business?
-          Let's shake hands with me.
+          {text}
         </p>
       </Vertical>
     </div>
