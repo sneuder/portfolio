@@ -1,3 +1,4 @@
+import Responsive from '../common/layouts/responsive'
 import Horizontal from "../common/layouts/horizontal"
 import Image from "../components/image"
 import MainHeader from "../components/mainHeader"
@@ -7,7 +8,9 @@ const Home = () => {
     <main>
       <Horizontal>
         <MainHeader />
-        <Image imageName="aboutme" />
+        <Responsive>
+          <Image imageName="aboutme" />
+        </Responsive>
       </Horizontal>
     </main>
   )

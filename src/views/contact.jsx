@@ -1,4 +1,5 @@
 import Horizontal from '../common/layouts/horizontal'
+import Responsive from '../common/layouts/responsive'
 import Vertical from '../common/layouts/vertical'
 import Title from '../common/title'
 import ContactForm from '../components/contactForm'
@@ -13,7 +14,9 @@ const Contact = () => {
       />
       <Horizontal>
         <ContactForm />
-        <Image imageName="contact" />
+        <Responsive>
+          <Image imageName="contact" />
+        </Responsive>
       </Horizontal>
     </Vertical>
   )
