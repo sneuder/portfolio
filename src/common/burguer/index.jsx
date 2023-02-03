@@ -3,7 +3,7 @@ import style from './index.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-import useModal from '../../hook/useModal'
+import useModal from '../../hooks/useModal'
 
 const Burguer = () => {
   const { handleModal } = useModal()

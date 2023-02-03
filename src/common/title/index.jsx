@@ -1,5 +1,5 @@
 import style from './index.module.scss'
-import useTitle from '../../hook/useTitle'
+import useTitle from '../../hooks/useTitle'
 
 const Title = ({title, description}) => {
   const {partialTitle, highlightedWord} = useTitle(title)

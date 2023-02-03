@@ -1,8 +1,8 @@
 import style from './index.module.scss'
 
-const Vertical = ({ children }) => {
+const Vertical = ({ children, idPage }) => {
   return (
-    <section className={style.verticalSection}>
+    <section className={style.verticalSection} id={idPage}>
       {children}
     </section>
   )

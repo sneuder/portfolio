@@ -11,6 +11,8 @@ nav {
   background: $quaternary-color;
   z-index: 1;
 
+  @include transition();
+
   
   .containerNav {
     height: 100%;
