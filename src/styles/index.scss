@@ -31,9 +31,3 @@ body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
   border-radius: 5px;
 }
-
-#root {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 80px;
-}

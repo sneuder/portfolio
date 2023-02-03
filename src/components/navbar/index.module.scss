@@ -27,6 +27,7 @@ nav {
 
 
 @media screen and (max-width: 900px) {
+  nav {
     .containerItems {
       display: none;
     }
@@ -34,4 +35,5 @@ nav {
     .containerBurguer {
       display: block;
     }
+  }
 }

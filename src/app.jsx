@@ -1,5 +1,5 @@
+import SectionContainer from './common/layouts/sectionContaner';
 import Navbar from './components/navbar'
-
 import Projects from "./views/projects";
 import Contact from "./views/contact";
 
@@ -7,8 +7,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Projects />
-      <Contact />
+      <SectionContainer>
+        <Projects />
+        <Contact />
+      </SectionContainer>
     </>
   );
 }
