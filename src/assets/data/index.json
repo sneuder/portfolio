@@ -29,7 +29,15 @@
       "link": "https://puppies-fronted.vercel.app/",
       "description": "This app consumes an api which contains information about dogs. User can create dogs and filter and order them by temperament, weight, and alphabetically. It is possible to see what dogs are from API and Data Base. Besides, user can search dog with the search bar."
     },
-  
+    
+    {
+      "id": "94",
+      "name": "Weather",
+      "img": "weather.png",
+      "link": "https://weather-sneuder.vercel.app/",
+      "description": "Weather app which consumes an API to get the information and shows it on screen. It has the forecast and it is possible to go on details clicking on each card. Besides, it is possible to search cities or countries and change the temperature unit."
+    },
+
     {
       "id": "8",
       "name": "Service Puppie",
