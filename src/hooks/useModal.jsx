@@ -1,11 +1,9 @@
-import { useState } from "react"
+import { useContext } from 'react';
+import GeneralContext from '../context';
 
 const useModal = () => {
-  const [openedModal, setOpenedModal] = useState(false)
-
-  const handleModal = () => {
-    setOpenedModal(!openedModal)
-  }
+  const { postStateMethods } = useContext(GeneralContext)
+  const { handleModal } = postStateMethods
 
   return {
     handleModal

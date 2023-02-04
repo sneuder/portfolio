@@ -1,9 +1,8 @@
-import style from './index.module.scss'
+import useModal from '../../hooks/useModal'
 
+import style from './index.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
-import useModal from '../../hooks/useModal'
 
 const Burguer = () => {
   const { handleModal } = useModal()
