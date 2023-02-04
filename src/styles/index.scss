@@ -14,6 +14,7 @@ a {
 }
 
 body {
+  padding: 0 2rem;
   max-width: 100vw;
   font-family: "Montserrat";
 }
@@ -29,8 +30,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
   border-radius: 5px;
-}
-
-.app {
-  max-width: 100vw;
 }
