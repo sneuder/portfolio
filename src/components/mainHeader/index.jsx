@@ -18,7 +18,7 @@ const MainHeader = () => {
         <p className={style.text}>
           {text}
         </p>
-        <Button text="Check out my LinkedIn!" link={linkedin}/>
+        <Button text="Check out my LinkedIn!" link={linkedin} buttonType="secondaryButton"/>
       </Vertical>
     </div>
   )

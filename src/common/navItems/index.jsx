@@ -1,10 +1,11 @@
 import style from './index.module.scss';
-
+import Button from '../button';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import linksInfo from '../../constants/linksInfo';
 
 const NavItems = () => {
-  // const data = require('../../assets/otherInfo.json');
+  const { links } = require("../../assets/data/index.json");
+  const { cv } = links
 
   return (
     <ul className={style.navItemsContainer}>
@@ -16,7 +17,8 @@ const NavItems = () => {
             </Link>
           </li>
         ))
-      }    
+      }   
+      <Button text="Resume" link={cv} buttonType="primaryButton"/>
     </ul>
   );
 };
