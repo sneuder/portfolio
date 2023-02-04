@@ -14,7 +14,7 @@ const ContactForm = () => {
   return (
         <form className={style.formContainer} onSubmit={sendEmail}>
           {
-            inputInfo.map(info => <Input {...info}/>)
+            inputInfo.map(info => <Input key={info.name} {...info}/>)
           }
 
           <InputContainer>

@@ -11,7 +11,7 @@ const NavItems = () => {
     <ul className={style.navItemsContainer}>
       {
         linksInfo.map(({to, text}) => (
-          <li>
+          <li key={to}>
             <Link smooth to={to} >
               {text}
             </Link>
