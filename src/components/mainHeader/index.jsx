@@ -1,9 +1,11 @@
+import Button from '../../common/button';
 import Vertical from '../../common/layouts/vertical'
 import style from './index.module.scss'
 
 const MainHeader = () => {
-  const { sections } = require("../../assets/data/index.json");
+  const { sections, links } = require("../../assets/data/index.json");
   const { title, role, text } = sections.home
+  const { linkedin } = links
 
   return (
     <div className={style.mainHeaderContainer}>
@@ -16,6 +18,7 @@ const MainHeader = () => {
         <p className={style.text}>
           {text}
         </p>
+        <Button text="Check out my LinkedIn!" link={linkedin}/>
       </Vertical>
     </div>
   )

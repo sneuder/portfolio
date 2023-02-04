@@ -3,18 +3,18 @@ const linksInfo = [
     to: "#home",
     text: "Home"
   },
-  {
-    to: "#aboutme",
-    text: "About me"
-  },
+  // {
+  //   to: "#aboutme",
+  //   text: "About me"
+  // },
   {
     to: "#projects",
     text: "Projects"
   },
-  {
-    to: "#skills",
-    text: "Skills"
-  },
+  // {
+  //   to: "#skills",
+  //   text: "Skills"
+  // },
   {
     to: "#contact",
     text: "Contact"

@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+
+.generalButton {
+  @include transition();
+  justify-self: start;
+  padding: 1rem;
+  border-radius: $border-radius;
+  background-color: $secondary-color;
+  color: $quaternary-color;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}
