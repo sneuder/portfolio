@@ -1,14 +1,16 @@
+import emailjs from 'emailjs-com'
+
 const useEmail = () => {
-  const sendEmail = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
     
-    // await emailjs.sendForm(
-    //   "service_fib3fdv",
-    //   "template_yhvx24m",
-    //   e.target,
-    //   "NwUhDkym5i8dnYX7u"
-    // );
-    // e.target.reset();
+    emailjs.sendForm("service_fib3fdv", "template_yhvx24m", e.target,"NwUhDkym5i8dnYX7u")
+      .then(() => {
+        e.target.reset();
+      })
+      .catch((e) => {
+        throw new Error(e)
+      })
   };
 
   return {
