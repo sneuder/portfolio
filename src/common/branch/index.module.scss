@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+
+.branchContainer {
+  @include center-flexbox();
+
+  & p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $tertiary-color;
+  }
+
+  & span {
+    color: $secondary-color;
+  }
+}

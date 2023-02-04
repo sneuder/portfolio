@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "home": {
+      "title": "Hi, I'm Esneider",
+      "role": "Full Stack Web Developer",
+      "text": "Hey, are looking for a web developer to build your Brand and grow your business? Let's shake hands with me." 
+    },
+    "aboutme": {
+    },
+    "projects": {
+      "title": "Some of my work",
+      "text": "As a full stack web developer I have completed some personal projects" 
+    },
+    "contact": {
+      "title": "Contact me",
+      "text": "If you would like to type me a message, fill the form below, I will type you back" 
+    }
+  },
+  "links": {
+    "cv": "https://drive.google.com/file/d/18eg0HOSWwWaRvUPb1gc_a6yg0Zs1rO-5/view?usp=share_link",
+    "github": "https://github.com/sneuder",
+    "linkedin": "https://www.linkedin.com/in/esneider-fullstackdeveloper/"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "name": "Puppies",
+      "img": "dog-app.png",
+      "link": "https://puppies-fronted.vercel.app/",
+      "description": "This app consumes an api which contains information about dogs. User can create dogs and filter and order them by temperament, weight, and alphabetically. It is possible to see what dogs are from API and Data Base. Besides, user can search dog with the search bar."
+    },
+  
+    {
+      "id": "8",
+      "name": "Service Puppie",
+      "img": "puppies-service.jpg",
+      "link": "https://github.com/sneuder/puppies-backend",
+      "description": "It is service where the Puppies app get the information to show up on screen. It has functions related to CRUD. The technologies used for this service are NodeJS, Sequelize, and JWT. It has clean architecture and scalable."
+    },
+  
+    {
+      "id": "3",
+      "name": "Rick and Morty",
+      "img": "rick-morty.png",
+      "link": "https://rick-and-morty-random.vercel.app/",
+      "description": "It is a website which was built with ReactJS and Styled Components. This uses GraphQL to fetch data from an api. User can see characters of Rick and Morty, and can have a history of their appearance. When user clicks on the button it will show a random character."
+    },
+  
+    {
+      "id": "67",
+      "name": "Pokemon Service",
+      "img": "pokemon-service.jpg",
+      "link": "https://github.com/sneuder/pokemon-backend",
+      "description": "It is a service built with NodeJS and TypeScript, MongoDB, using Mongoose. This service provides information for the Pokemon app. It is possible to create, delete, update, and get Pokemons from the DataBase (MongoDB). "
+    },
+  
+    {
+      "id": "7",
+      "name": "Chaira Login",
+      "img": "login-chaira.png",
+      "link": "https://chaira-login.vercel.app/",
+      "description": "This is a proposal for Amazonia University. It has a login which needs some changes asked for by students. So, I decided to make those changes and show this proposal to university (pending state). It is built with ReactJS, Styled Components, and clear architecture."
+    },
+  
+    {
+      "id": "5",
+      "name": "Todo app",
+      "img": "todo-app.png",
+      "link": "https://todo-app-five-rose.vercel.app/",
+      "description": "It is built using ReactJS, Redux, and Styled Components. It is possible to add tasks, complete them, and remove them. Besides, user can see the tasks in the list and in the completed list. It is a perfect app to be productive in your day."
+    },
+  
+    {
+      "id": "2",
+      "name": "Posh Boutique",
+      "img": "posh.png",
+      "link": "https://frontend-five-gules.vercel.app/",
+      "description": "This is an E-commerce which was built with a team of 8 members. User can see clothe products, buy them, add them to the cart, sign in, sign up, and checkout. Besides, user can search clothe with the search bar. There is an administrator panel where user can add new products, delete products, and edit them."
+    }
+  
+  ]
+  
+}

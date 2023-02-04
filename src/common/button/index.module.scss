@@ -1,0 +1,32 @@
+@import "../../styles/index.scss";
+
+.generalButton {
+  @include transition();
+  justify-self: start;
+  padding: 1rem;
+  border-radius: $border-radius;
+  font-weight: 500;
+  
+}
+
+.secondaryButton {
+  background-color: $secondary-color;
+  color: $quaternary-color;
+  
+  &:hover {
+    background-color: $primary-color;
+  }  
+}
+
+.primaryButton {
+  background-color: $primary-color;
+  border: 2px solid transparent;
+  color: $quaternary-color;
+  padding: 0.4rem 0.7rem;
+
+  &:hover {
+    border-color: $primary-color;
+    background-color: transparent;
+    color: $primary-color;
+  }
+}
