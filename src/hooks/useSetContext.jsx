@@ -4,7 +4,7 @@ import initialContext from '../context/context'
 const useSetContext = () => {
   const [state, setState] = useState(initialContext)
 
-  const handleModal = () => {
+  const reduceModal = () => {
     setState({...state, modalState: !state.modalState})
   }
 
@@ -14,7 +14,7 @@ const useSetContext = () => {
       modal: state.modalState
     },
     postStateMethods: {
-      handleModal
+      reduceModal
     }
   }
 }
