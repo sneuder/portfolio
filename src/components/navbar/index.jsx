@@ -1,5 +1,6 @@
 import style from "./index.module.scss";
 
+import MobileNavbar from "./mobile";
 import Modal from "../../common/modal";
 import Burguer from "../../common/burguer";
 import Branch from "../../common/branch";
@@ -9,7 +10,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className={style.containerNav}>
-      <Modal />
+      <Modal>
+        <MobileNavbar />
+      </Modal>
       <Branch />
       <div className={style.containerItems}>
         <NavItems />

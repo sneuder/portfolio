@@ -1,0 +1,21 @@
+@import "../../../styles/index.scss";
+
+.mobileNavbarContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  
+  width: 200px;
+  background-color: $quaternary-color;
+  padding: 2rem;
+  
+  animation: showNavbar 0.3s ease 0.1s;
+  animation-fill-mode: forwards;
+  transform: translate(-200px);
+}
+
+@keyframes showNavbar {
+  to {
+    transform: translate(0px);
+  }
+}

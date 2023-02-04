@@ -26,3 +26,11 @@
       color: $secondary-color;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .navItemsContainer {
+      flex-direction: column;
+      gap: 1rem;
+      height: 100vh;
+    }
+  }
