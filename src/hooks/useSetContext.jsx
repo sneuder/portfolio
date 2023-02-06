@@ -16,12 +16,12 @@ const useSetContext = () => {
     state: {
       modal: state.modalState,
       loading: state.loading,
-      formSent: state.formSent,
+      formSent: state.formSent
     },
     reduceData,
     postStateMethods: {
-      reduceModal,
-    },
+      reduceModal
+    }
   }
 }
 
