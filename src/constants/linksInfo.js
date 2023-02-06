@@ -1,7 +1,7 @@
 const linksInfo = [
   {
     to: '#home',
-    text: 'Home',
+    text: 'Home'
   },
   // {
   //   to: "#aboutme",
@@ -9,7 +9,7 @@ const linksInfo = [
   // },
   {
     to: '#projects',
-    text: 'Projects',
+    text: 'Projects'
   },
   // {
   //   to: "#skills",
@@ -17,8 +17,8 @@ const linksInfo = [
   // },
   {
     to: '#contact',
-    text: 'Contact',
-  },
+    text: 'Contact'
+  }
 ]
 
 export default linksInfo

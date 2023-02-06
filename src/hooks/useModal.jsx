@@ -12,7 +12,7 @@ const useModal = () => {
   }
 
   return {
-    handleModal,
+    handleModal
   }
 }
 

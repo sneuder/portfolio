@@ -26,7 +26,7 @@ const useEmail = () => {
   }
 
   return {
-    sendEmail,
+    sendEmail
   }
 }
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import style from './skills.module.scss'
 
 const Skills = () => {
@@ -18,7 +17,7 @@ const Skills = () => {
     'MongoDB',
     'Sequelize',
     'Testing',
-    'Web design',
+    'Web design'
   ]
 
   return (
