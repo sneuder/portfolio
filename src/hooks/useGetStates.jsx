@@ -3,7 +3,7 @@ import GeneralContext from '../context';
 
 const useGetStates = () => {
   const { state } = useContext(GeneralContext)
-  return { ...state }
+  return state
 }
 
 export default useGetStates

@@ -7,9 +7,11 @@ import inputInfo from '../../constants/inputInfo'
 import InputContainer from '../../common/layouts/inputContainer';
 
 import useEmail from '../../hooks/useEmail';
+import useGetStates from '../../hooks/useGetStates';
 
 const ContactForm = () => {
   const { sendEmail } = useEmail()
+  const { loading } = useGetStates()
 
   return (
         <form className={style.formContainer} onSubmit={sendEmail}>
@@ -30,7 +32,8 @@ const ContactForm = () => {
           <InputContainer>
             <input
               type="submit"
-              value="Send"
+              value={loading ? 'Sending...' : 'Send'}
+              disabled={loading}              
               placeholder="Submit"
             />
           </InputContainer>

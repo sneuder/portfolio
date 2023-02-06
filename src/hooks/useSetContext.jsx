@@ -8,13 +8,19 @@ const useSetContext = () => {
     setState({...state, modalState: !state.modalState})
   }
 
+  const reduceData = (pro) => {
+    setState((prev) => ({...prev, [pro]: !prev[pro]}))
+  }
+
   return {
     state: {
-      state,
-      modal: state.modalState
+      modal: state.modalState,
+      loading: state.loading,
+      formSent: state.formSent
     },
+    reduceData,
     postStateMethods: {
-      reduceModal
+      reduceModal,
     }
   }
 }

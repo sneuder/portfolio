@@ -52,4 +52,13 @@
   & input[type="submit"]:hover {
     background: $primary-color;
   }
+
+  & input[type="submit"]:disabled {
+    cursor: auto;
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  } 
 }
