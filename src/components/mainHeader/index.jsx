@@ -4,7 +4,7 @@ import style from './index.module.scss'
 
 const MainHeader = () => {
   const { sections, links } = require('../../assets/data/index.json')
-  const { title, role, text } = sections.home
+  const { role, text } = sections.home
   const { linkedin } = links
 
   return (
@@ -12,7 +12,7 @@ const MainHeader = () => {
       <Vertical>
         <h1>
           Hi, <br />
-          I'm <span>Esneider</span>
+          I$aposm <span>Esneider</span>
         </h1>
         <p className={style.role}>{role}</p>
         <p className={style.text}>{text}</p>

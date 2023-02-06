@@ -1,8 +1,6 @@
 import useGetStates from '../../hooks/useGetStates'
 import useModal from '../../hooks/useModal'
 
-import style from './index.module.scss'
-
 const Modal = ({ children }) => {
   const { modal } = useGetStates()
   const { handleModal } = useModal()

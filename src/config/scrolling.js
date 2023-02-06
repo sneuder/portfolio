@@ -2,7 +2,7 @@ const scrolling = () => {
   let prevScrollpos = window.pageYOffset
 
   window.onscroll = () => {
-    let currentScrollPos = window.pageYOffset
+    const currentScrollPos = window.pageYOffset
     const navbar = document.querySelector('nav')
 
     prevScrollpos > currentScrollPos

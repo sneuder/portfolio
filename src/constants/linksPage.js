@@ -3,7 +3,7 @@ import linksInfo from './linksInfo'
 const linksPage = buildLinks()
 
 function buildLinks() {
-  let preLinks = {}
+  const preLinks = {}
   linksInfo.forEach((link) => {
     const textLink = link.to.replace('#', '')
     preLinks[textLink] = textLink
