@@ -1,5 +1,6 @@
-@import "../../styles/index.scss";
+@import '../../styles/index.scss';
 
 .formContainer {
   @include vertical();
+  gap: 2rem;
 }

@@ -1,4 +1,4 @@
-import { faUser, faAt, faBook } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faAt, faBook } from '@fortawesome/free-solid-svg-icons'
 
 const inputInfo = [
   {

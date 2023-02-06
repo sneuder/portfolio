@@ -1,4 +1,4 @@
-@import "../../styles/index.scss";
+@import '../../styles/index.scss';
 
 .generalButton {
   @include transition();
@@ -6,16 +6,15 @@
   padding: 1rem;
   border-radius: $border-radius;
   font-weight: 500;
-  
 }
 
 .secondaryButton {
   background-color: $secondary-color;
   color: $quaternary-color;
-  
+
   &:hover {
     background-color: $primary-color;
-  }  
+  }
 }
 
 .primaryButton {

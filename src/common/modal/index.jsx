@@ -1,9 +1,7 @@
 import useGetStates from '../../hooks/useGetStates'
-import useModal from '../../hooks/useModal';
+import useModal from '../../hooks/useModal'
 
-import style from "./index.module.scss";
-
-const Modal = ({children}) => {
+const Modal = ({ children }) => {
   const { modal } = useGetStates()
   const { handleModal } = useModal()
 
@@ -11,7 +9,7 @@ const Modal = ({children}) => {
     <dialog open={modal} onClick={handleModal}>
       {children}
     </dialog>
-  );
-};
+  )
+}
 
-export default Modal;
+export default Modal

@@ -1,15 +1,15 @@
 const scrolling = () => {
-  let prevScrollpos = window.pageYOffset;
-  
+  let prevScrollpos = window.pageYOffset
+
   window.onscroll = () => {
-    let currentScrollPos = window.pageYOffset;
-    const navbar = document.querySelector("nav")
-    
-    prevScrollpos > currentScrollPos ?
-    navbar.style.top = "0" :
-    navbar.style.top = "-80px";
-    
-    prevScrollpos = currentScrollPos;
+    const currentScrollPos = window.pageYOffset
+    const navbar = document.querySelector('nav')
+
+    prevScrollpos > currentScrollPos
+      ? (navbar.style.top = '0')
+      : (navbar.style.top = '-80px')
+
+    prevScrollpos = currentScrollPos
   }
 }
 

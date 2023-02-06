@@ -1,4 +1,4 @@
-import style from "./index.module.scss";
+import style from './index.module.scss'
 
 const Branch = () => {
   return (
@@ -7,7 +7,7 @@ const Branch = () => {
         Sne<span>uder</span>
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default Branch;
+export default Branch

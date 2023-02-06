@@ -1,5 +1,7 @@
 const initialContext = {
-  modalState: false
+  modalState: false,
+  loading: false,
+  formSent: false
 }
 
 export default initialContext

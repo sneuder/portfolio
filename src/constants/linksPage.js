@@ -1,10 +1,10 @@
-import linksInfo from "./linksInfo";
+import linksInfo from './linksInfo'
 
 const linksPage = buildLinks()
 
-function buildLinks () {
-  let preLinks = {}
-  linksInfo.forEach(link => {
+function buildLinks() {
+  const preLinks = {}
+  linksInfo.forEach((link) => {
     const textLink = link.to.replace('#', '')
     preLinks[textLink] = textLink
   })

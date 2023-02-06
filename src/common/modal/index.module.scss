@@ -1,4 +1,4 @@
-@import "../../styles/index.scss";
+@import '../../styles/index.scss';
 
 dialog {
   top: 0;
@@ -7,7 +7,6 @@ dialog {
   height: 100vh;
 }
 
-
 dialog[open] {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }

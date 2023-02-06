@@ -1,5 +1,4 @@
-import React from 'react';
-import style from './skills.module.scss';
+import style from './skills.module.scss'
 
 const Skills = () => {
   const skills = [
@@ -18,14 +17,11 @@ const Skills = () => {
     'MongoDB',
     'Sequelize',
     'Testing',
-    'Web design',
-  ];
+    'Web design'
+  ]
 
   return (
-    <div
-      className={style.background}
-      id="skills"
-    >
+    <div className={style.background} id="skills">
       <div className={style.containerInfo}>
         <div className={style.containerHeader}>
           <h2 className={style.header}>
@@ -37,10 +33,7 @@ const Skills = () => {
         </div>
         <div className={style.containerSkills}>
           {skills.map((skill) => (
-            <div
-              key={skill}
-              className={style.containerSkill}
-            >
+            <div key={skill} className={style.containerSkill}>
               <p className={style.skill}>{skill}</p>
             </div>
           ))}
@@ -54,7 +47,7 @@ const Skills = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills
