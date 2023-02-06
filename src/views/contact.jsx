@@ -8,15 +8,12 @@ import ContactForm from '../components/contactForm'
 import Image from '../components/image'
 
 const Contact = () => {
-  const { sections } = require("../assets/data/index.json");
-  const {title, text} = sections.contact
+  const { sections } = require('../assets/data/index.json')
+  const { title, text } = sections.contact
 
   return (
-    <Vertical idPage={linksPage.contact} >
-      <Title
-        title={title}
-        description={text}
-      />
+    <Vertical idPage={linksPage.contact}>
+      <Title title={title} description={text} />
       <Horizontal>
         <ContactForm />
         <Responsive>

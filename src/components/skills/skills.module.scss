@@ -1,4 +1,4 @@
-@import "../../styles/index.scss";
+@import '../../styles/index.scss';
 
 .background {
   @include backgroundDefault();
@@ -72,7 +72,6 @@
 
   @media screen and (max-width: 450px) {
     .containerInfo {
-
       .containerSkills {
         display: grid;
         grid-template-columns: 1fr 1fr;

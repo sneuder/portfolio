@@ -1,5 +1,4 @@
-@import "../../styles/index.scss";
-
+@import '../../styles/index.scss';
 
 .mainHeaderContainer {
   align-self: center;
@@ -7,7 +6,6 @@
   & h1 {
     color: $primary-color;
     font-size: 4rem;
-
   }
 
   & span {
@@ -16,8 +14,8 @@
 
   & .role {
     color: $primary-color;
-        font-size: 2rem;
-        font-weight: 400;
+    font-size: 2rem;
+    font-weight: 400;
   }
 
   & .text {

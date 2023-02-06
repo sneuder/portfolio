@@ -7,7 +7,11 @@ const MobileNavbar = () => {
   const { modal } = useGetStates()
 
   return (
-    <div className={`${style.backgroundMobileNavbar} ${!modal ? style.hideNavbarMobile : style.showNavbarMobile}`}>
+    <div
+      className={`${style.backgroundMobileNavbar} ${
+        !modal ? style.hideNavbarMobile : style.showNavbarMobile
+      }`}
+    >
       <div className={style.mobileNavbarContainer}>
         <Branch />
         <NavItems />

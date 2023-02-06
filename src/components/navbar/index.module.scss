@@ -1,4 +1,4 @@
-@import "../../styles/index.scss";
+@import '../../styles/index.scss';
 
 nav {
   padding: 0 2rem;
@@ -13,19 +13,17 @@ nav {
 
   @include transition();
 
-  
   .containerNav {
     height: 100%;
     max-width: 1280px;
     @include horizontal();
     align-items: center;
   }
-  
+
   .containerBurguer {
     display: none;
   }
 }
-
 
 @media screen and (max-width: 900px) {
   nav {

@@ -1,7 +1,7 @@
-import style from "./index.module.scss";
+import style from './index.module.scss'
 
 const Projects = () => {
-  const { projects } = require("../../assets/data/index.json");
+  const { projects } = require('../../assets/data/index.json')
 
   return (
     <div className={style.containerProjects}>
@@ -19,7 +19,7 @@ const Projects = () => {
               <p>{project.description}</p>
             </div>
           </div>
-        );
+        )
       })}
     </div>
   )

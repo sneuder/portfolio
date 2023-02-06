@@ -4,7 +4,7 @@ const useTitle = (titleToLight) => {
 
   return {
     partialTitle: partialTitle.join(' '),
-    highlightedWord
+    highlightedWord,
   }
 }
 

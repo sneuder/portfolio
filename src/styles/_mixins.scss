@@ -1,4 +1,4 @@
-@mixin center-flexbox(){
+@mixin center-flexbox() {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,41 +14,41 @@
   flex-direction: column;
 }
 
-@mixin default-inputs(){
+@mixin default-inputs() {
   width: auto;
   height: $height-elements;
   border-radius: $border-radius;
   padding: $side-padding;
 }
 
-@mixin transition(){
+@mixin transition() {
   transition: all 0.3s ease;
 }
 
-@mixin backgroundDefault(){
+@mixin backgroundDefault() {
   max-width: 100vw;
   min-height: 100vh;
   padding: 3rem 3rem 0 3rem;
   padding-top: 80px;
 }
 
-@mixin header(){
+@mixin header() {
   font-size: 4rem;
   color: $primary-color;
 }
 
-@mixin headerDecoration(){
+@mixin headerDecoration() {
   color: $secondary-color;
 }
 
-@mixin text(){
+@mixin text() {
   line-height: 1.5rem;
   color: $primary-color;
   font-weight: 400;
   margin-top: 2rem;
 }
 
-@mixin sizeIcons(){
+@mixin sizeIcons() {
   width: $icon-size;
   height: $icon-size;
   color: $primary-color;

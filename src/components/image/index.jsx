@@ -1,12 +1,12 @@
 import style from './index.module.scss'
 
-const Image = ({imageName}) => {
+const Image = ({ imageName }) => {
   return (
     <img
-          className={style.img}
-          src={require(`../../assets/sections/${imageName}.svg`)}
-          alt="contact"
-        />
+      className={style.img}
+      src={require(`../../assets/sections/${imageName}.svg`)}
+      alt="contact"
+    />
   )
 }
 

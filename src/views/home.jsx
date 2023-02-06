@@ -1,9 +1,9 @@
 import linksPage from '../constants/linksPage'
 
 import Responsive from '../common/layouts/responsive'
-import Horizontal from "../common/layouts/horizontal"
-import Image from "../components/image"
-import MainHeader from "../components/mainHeader"
+import Horizontal from '../common/layouts/horizontal'
+import Image from '../components/image'
+import MainHeader from '../components/mainHeader'
 
 const Home = () => {
   return (

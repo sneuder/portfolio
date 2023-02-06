@@ -1,24 +1,24 @@
-import { faUser, faAt, faBook } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faAt, faBook } from '@fortawesome/free-solid-svg-icons'
 
 const inputInfo = [
   {
     type: 'text',
     name: 'name',
     placeholder: 'Your name...',
-    icon: faUser
+    icon: faUser,
   },
   {
     type: 'email',
     name: 'fromEmail',
     placeholder: 'Your email...',
-    icon: faAt
+    icon: faAt,
   },
   {
     type: 'text',
     name: 'subject',
     placeholder: 'Subject...',
-    icon: faBook
-  }
+    icon: faBook,
+  },
 ]
 
 export default inputInfo

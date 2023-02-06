@@ -1,4 +1,4 @@
-@import "../../../styles/index.scss";
+@import '../../../styles/index.scss';
 
 .backgroundMobileNavbar {
   width: 100%;
@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  
+
   width: 200px;
   background-color: $quaternary-color;
   padding: 2rem;
