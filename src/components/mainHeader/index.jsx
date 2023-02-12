@@ -12,7 +12,7 @@ const MainHeader = () => {
       <Vertical>
         <h1>
           Hi, <br />
-          I$aposm <span>Esneider</span>
+          I&#39;m <span>Esneider</span>
         </h1>
         <p className={style.role}>{role}</p>
         <p className={style.text}>{text}</p>
