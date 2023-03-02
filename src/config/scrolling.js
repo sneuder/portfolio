@@ -6,8 +6,8 @@ const scrolling = () => {
     const navbar = document.querySelector('nav')
 
     prevScrollpos > currentScrollPos
-      ? (navbar.style.top = '0')
-      : (navbar.style.top = '-80px')
+      ? (navbar.style.transform = 'translateY(0)')
+      : (navbar.style.transform = 'translateY(-80px)')
 
     prevScrollpos = currentScrollPos
   }
