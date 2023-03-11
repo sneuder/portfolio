@@ -38,6 +38,14 @@
     },
 
     {
+      "id": "156",
+      "name": "Marketing Landing Page",
+      "img": "marketing.png",
+      "link": "https://sneuder-marketing-agency.webflow.io/",
+      "description": "Marketing agency which is ficticius and try to show how it would be a landing of a service like this. For this project I used a platform called Webflow which gives you all needed tools to develope webpages with payment integrations, CMS, and eCommerce."
+    },
+
+    {
       "id": "8",
       "name": "Service Puppie",
       "img": "puppies-service.jpg",
