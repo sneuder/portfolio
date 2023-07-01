@@ -1,6 +1,7 @@
 @import '../../styles/index.scss';
 
 .formContainer {
+  width: 100%;
   @include vertical();
   gap: 2rem;
 }

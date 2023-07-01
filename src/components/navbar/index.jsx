@@ -13,6 +13,7 @@ const Navbar = () => {
         <Modal>
           <MobileNavbar />
         </Modal>
+
         <Branch />
         <div className={style.containerItems}>
           <NavItems />

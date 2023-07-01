@@ -1,4 +1,7 @@
 .horizontalSection {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;

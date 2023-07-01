@@ -12,10 +12,11 @@ nav {
   z-index: 1;
 
   @include transition();
-
+  
   .containerNav {
     height: 100%;
     max-width: 1280px;
+    margin: auto;
     @include horizontal();
     align-items: center;
   }
