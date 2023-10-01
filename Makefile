@@ -29,9 +29,6 @@ endif
 
 # image process
 
-build-image:
-	@docker build --target $(MODE) -t $(IMAGE_NAME) .
-
 build-container:
 	@docker run -d -p 3000:3000 --name $(CONTAINER_NAME) $(IMAGE_NAME)
 
@@ -43,15 +40,15 @@ build-container-bind:
 
 # setting env
 
-set-mode:
-	$(eval MODE = $(MODE_DEV))
+build-image: 
+	@docker build --target $(MODE) -t $(IMAGE_NAME) .
 
 # for prod and dev
 
 run-prod: remove-container remove-image build-image build-container
 	@echo "Container running in prod"
 
-run-dev: set-mode
+run-dev: 
 ifneq ($(shell docker ps -aq -f name=$(CONTAINER_NAME)),)
 	@echo "Container $(CONTAINER_NAME) running in dev"
 	@docker start -a $(CONTAINER_NAME)
@@ -59,9 +56,8 @@ else
 	@echo "Container $(CONTAINER_NAME) not found. Building and running..."
 	@make -s remove-container
 	@make -s remove-image
-	@make -s build-image
+	@make -s build-image MODE=dev
 	@make -s build-container-bind
 endif
 
-run-dev-restart: set-mode remove-container remove-image build-image build-container-bind
-	@echo "Container $(CONTAINER_NAME) running in dev"
+restart: remove-container remove-image

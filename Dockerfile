@@ -18,6 +18,8 @@ WORKDIR /app
 
 EXPOSE 3000
 
-CMD tail -f /dev/null
-CMD ["npm", "i"]
-CMD ["npm", "start"]
+RUN apk update
+
+RUN apk add --no-cache git
+
+CMD ["sleep", "infinity"]
