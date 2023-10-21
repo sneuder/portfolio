@@ -35,7 +35,6 @@
       "link": "https://encrypt-word.vercel.app/",
       "description": "Encrypt employs cutting-edge encryption methods, guaranteeing top-tier data protection. With its intuitive interface, it seamlessly secures your data. Explore detailed encryption options effortlessly, ensuring your digital assets are always shielded from prying eyes."
     },
-
     {
       "id": "95",
       "name": "Encrypt Service",
@@ -43,7 +42,6 @@
       "link": "https://github.com/sneuder/encrypt-words-back",
       "description": "Encrypt Service offers cutting-edge encryption, empowering developers with top-tier data protection. Its intuitive interface facilitates effortless encryption, ensuring your digital assets remain secure and confidential. Explore customizable encryption options effortlessly, guaranteeing airtight security for your applications."
     },
-
     {
       "id": "94",
       "name": "Weather",
