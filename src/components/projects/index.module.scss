@@ -21,13 +21,16 @@
   .projectInfo {
     padding: 1.5rem;
 
-    & > h3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    &>h3 {
       color: $primary-color;
       font-weight: 700;
-      margin-bottom: 0.5rem;
     }
 
-    & > p {
+    &>p {
       text-align: justify;
       line-height: 1.5rem;
       color: $primary-color;
@@ -40,6 +43,22 @@
   transform: translateY(-10px);
 }
 
+.containerStackTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  .stackTag {
+    font-size: 0.75rem;
+    background-color: $primary-color;
+    color: $quaternary-color;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+  }
+}
+
+
 @media screen and (max-width: 924px) {
   .containerProject {
     & img {
@@ -50,6 +69,25 @@
 
 @media screen and (max-width: 650px) {
   .containerProjects {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(10, 100%);
+
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+    border-radius: 5px;
+
+    .containerProject {
+      width: 100%;
+      scroll-snap-align: start;
+
+      box-shadow: none;
+
+      .projectInfo {
+        padding: 1.5rem 0 0 0;
+      }
+    }
+  }
+
+  .containerProjects::-webkit-scrollbar {
+    display: none;
   }
 }
