@@ -10,12 +10,10 @@ const Experience = () => {
   const { title, text } = sections.experience
 
   return (
-    <section id={linksPage.home}>
-      <Vertical>
-        <Title title={title} description={text}></Title>
-        <Jobs />
-      </Vertical>
-    </section>
+    <Vertical idPage={linksPage.experience}>
+      <Title title={title} description={text}></Title>
+      <Jobs />
+    </Vertical>
   )
 }
 
