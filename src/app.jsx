@@ -4,7 +4,9 @@ import scrolling from './config/scrolling'
 
 import SectionContainer from './common/layouts/sectionContaner'
 import Navbar from './components/navbar'
+
 import Home from './views/home'
+import Experience from './views/experience'
 import Projects from './views/projects'
 import Contact from './views/contact'
 
@@ -17,6 +19,7 @@ function App() {
       <Navbar />
       <SectionContainer>
         <Home />
+        <Experience />
         <Projects />
         <Contact />
       </SectionContainer>

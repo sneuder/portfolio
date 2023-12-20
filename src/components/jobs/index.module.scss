@@ -1,0 +1,38 @@
+@import '../../styles/index.scss';
+
+.containerJobs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  .containerJob {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    h3 {
+      text-wrap: balance;
+      color: $primary-color;
+    }
+
+    .date {
+      font-weight: 600;
+      text-decoration: underline;
+      color: $secondary-color;
+    }
+
+    .brief {
+      text-align: justify;
+      line-height: 1.5rem;
+      font-weight: 300;
+      color: $primary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .containerJobs  {
+    grid-template-columns: 1fr;
+  }
+}

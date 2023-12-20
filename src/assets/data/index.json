@@ -5,7 +5,10 @@
       "role": "Full Stack Web Developer",
       "text": "Hey, are looking for a web developer to build your Brand and grow your business? Let's shake hands with me."
     },
-    "aboutme": {},
+    "experience": {
+      "title": "Work Experience",
+      "text": "Explore my work history, accomplishments, and expertise below."
+    },
     "projects": {
       "title": "Some of my work",
       "text": "As a full stack web developer I have completed some personal projects"
@@ -20,6 +23,32 @@
     "github": "https://github.com/sneuder",
     "linkedin": "https://www.linkedin.com/in/esneider-fullstackdeveloper/"
   },
+  "jobs": [
+    {
+      "id": "94",
+      "company": "Imagine Apps",
+      "rol": "Software Developer",
+      "date": "Mar - Dec 2023",
+      "brief": "I specialize in developing web pages and applications using React, Angular, and diverse libraries. I offer ongoing support, optimize code for performance, and conduct rigorous code reviews for quality assurance. I manage NoSQL and SQL databases, design APIs for seamless integration, and facilitate efficient communication between components and external services.",
+      "stack": ["GO", "Node", "TypeScript", "Express", "NestJS", "Mongoose", "Sequelize", "JavaScript", "Angular", "React", "NextJS"]
+    },
+    {
+      "id": "95",
+      "company": "Blockdemy",
+      "rol": "Frontend Developer",
+      "date": "May - Nov 2022",
+      "brief": "In my role, I led the main website, providing ongoing support for optimal functionality and user experience. I implemented automated systems for prompt and accurate event date updates, eliminating manual intervention. I optimized guide distribution through efficient automated processes, ensuring swift delivery. Rigorous unit testing of website components guaranteed reliability and high performance throughout the web application",
+      "stack": ["Node", "TypeScript", "Express", "Sequelize", "JavaScript", "React", "NextJS", "Webflow", "Zappier", "Airtable"]
+    },
+    {
+      "id": "96",
+      "company": "Amazonias RGA",
+      "rol": "Full Stack Developer",
+      "date": "Jan 2021 - Feb 2022",
+      "brief": "I specialize in building robust APIs and user-centric web apps, prioritizing seamless experiences and functionality. Rigorous testing ensures top quality and reliability. I excel in structuring projects, optimizing tech stacks, and creating comprehensive documentation for efficient development and future enhancements.",
+      "stack": ["Java", "SpringBoot", "Express", "NestJS", "GO", "TypeScript", "Angular", "React"]
+    }
+  ],
   "projects": [
     {
         "id": "98",

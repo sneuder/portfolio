@@ -1,3 +1,4 @@
+import StackTag from '../../common/stackTag'
 import style from './index.module.scss'
 
 const Projects = () => {
@@ -18,13 +19,7 @@ const Projects = () => {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
 
-              <div className={style.containerStackTags}>
-                {
-                  project.stack.map((stack, index) => (
-                    <div key={`${project.id}-${index}`} className={style.stackTag}>{ stack }</div>
-                  ))
-                }
-              </div>
+              <StackTag stacks={project.stack} />
             </div>
           </div>
         )
