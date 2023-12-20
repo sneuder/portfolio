@@ -1,4 +1,10 @@
-@import '../../styles/index.scss';
+@import '../../../../styles/index.scss';
+
+.containerStackTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 
 .containerJobs {
   display: grid;

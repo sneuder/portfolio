@@ -49,6 +49,7 @@
       "stack": ["Java", "SpringBoot", "Express", "NestJS", "GO", "TypeScript", "Angular", "React"]
     }
   ],
+  "mainProjects": [],
   "projects": [
     {
         "id": "98",

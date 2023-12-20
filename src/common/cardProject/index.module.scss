@@ -1,9 +1,9 @@
 @import '../../styles/index.scss';
 
-.containerProjects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+.containerStackTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .containerProject {
@@ -43,13 +43,11 @@
   transform: translateY(-10px);
 }
 
-@media screen and (max-width: 924px) {
-  .containerProject {
-    & img {
-      height: auto;
-    }
-  }
-}
+// @media screen and (max-width: 924px) {
+//   .containerProject {
+
+//   }
+// }
 
 @media screen and (max-width: 650px) {
   .containerProjects {
@@ -67,6 +65,10 @@
 
       .projectInfo {
         padding: 1.5rem 0 0 0;
+      }
+
+      & img {
+        height: auto;
       }
     }
   }

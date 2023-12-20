@@ -1,28 +1,32 @@
 import GeneralContext from './context'
 import useSetContext from './hooks/useSetContext'
-import scrolling from './config/scrolling'
 
-import SectionContainer from './common/layouts/sectionContaner'
-import Navbar from './components/navbar'
+import RouterProvider from './components/router'
 
-import Home from './views/home'
-import Experience from './views/experience'
-import Projects from './views/projects'
-import Contact from './views/contact'
+import Home from './pages/home'
+import Projects from './pages/projects'
 
 function App() {
   const toolsContext = useSetContext()
-  scrolling()
+
+  const routerInstruction = {
+    home: {
+      path: '/',
+      component: () => {
+        return <Home />
+      }
+    },
+    projects: {
+      path: '/projects',
+      component: () => {
+        return <Projects />
+      }
+    }
+  }
 
   return (
     <GeneralContext.Provider value={toolsContext}>
-      <Navbar />
-      <SectionContainer>
-        <Home />
-        <Experience />
-        <Projects />
-        <Contact />
-      </SectionContainer>
+      <RouterProvider routerInstruction={routerInstruction} />
     </GeneralContext.Provider>
   )
 }
