@@ -1,0 +1,16 @@
+@import '../../styles/index.scss';
+
+.containerStackTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  .stackTag {
+    font-size: 0.75rem;
+    background-color: $primary-color;
+    color: $quaternary-color;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+  }
+}

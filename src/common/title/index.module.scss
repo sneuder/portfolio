@@ -29,7 +29,9 @@
 }
 
 @media screen and (max-width: 450px) {
-  .titleContainer > p {
-    width: 100%;
+  .titleContainer {
+    & h2 {
+      font-size: 3rem;
+    }
   }
 }
