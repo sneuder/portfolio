@@ -6,10 +6,19 @@ import Vertical from '../../../../common/layouts/vertical'
 import RepositoryButton from '../../../../components/repositoryButton'
 import Title from '../../../../common/title'
 import CardProject from '../../../../common/cardProject'
+import GoTo from '../../../../common/goTo'
 
 const Projects = () => {
-  const { sections, projects } = require('../../../../assets/data/index.json')
+  const {
+    sections,
+    mainProjects
+  } = require('../../../../assets/data/index.json')
   const { title, text } = sections.projects
+
+  const goToInstruction = {
+    text: 'View All Projects',
+    to: '/projects'
+  }
 
   return (
     <Vertical idPage={linksPage.projects}>
@@ -18,10 +27,12 @@ const Projects = () => {
       </Title>
 
       <div className={style.containerProjects}>
-        {projects.map((project) => {
+        {mainProjects.map((project) => {
           return <CardProject project={project} key={project.id} />
         })}
       </div>
+
+      <GoTo instruction={goToInstruction} />
     </Vertical>
   )
 }

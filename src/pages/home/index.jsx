@@ -1,3 +1,5 @@
+import { createPortal } from 'react-dom'
+
 import scrolling from '../../config/scrolling'
 
 import SectionContainer from '../../common/layouts/sectionContaner'
@@ -13,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      {createPortal(<Navbar />, document.getElementById('navbar'))}
       <SectionContainer>
         <Heroe />
         <Experience />

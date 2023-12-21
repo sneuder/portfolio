@@ -5,10 +5,17 @@ import linksPage from '../../../../constants/linksPage'
 import Vertical from '../../../../common/layouts/vertical'
 import Title from '../../../../common/title'
 import StackTag from '../../../../common/stackTag'
+import GoTo from '../../../../common/goTo'
 
 const Experience = () => {
   const { sections, jobs } = require('../../../../assets/data/index.json')
   const { title, text } = sections.experience
+
+  const goToInstruction = {
+    text: 'View full Resume',
+    to: require('../../../../assets/resume.pdf'),
+    tab: true
+  }
 
   return (
     <Vertical idPage={linksPage.experience}>
@@ -30,8 +37,9 @@ const Experience = () => {
             </div>
           </div>
         ))}
-        <div></div>
       </div>
+
+      <GoTo instruction={goToInstruction} />
     </Vertical>
   )
 }

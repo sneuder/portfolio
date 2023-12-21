@@ -49,7 +49,32 @@
       "stack": ["Java", "SpringBoot", "Express", "NestJS", "GO", "TypeScript", "Angular", "React"]
     }
   ],
-  "mainProjects": [],
+  "mainProjects": [
+    {
+      "id": "98",
+      "name": "CLI Workspace",
+      "img": "cli-workspace.webp",
+      "link": "https://github.com/sneuder/cli-workspace",
+      "description": "Swift Workspace Creator: Simplifies Docker workspaces for teams or individuals. Crafted with Go and Docker, it ensures portable coding environments for seamless collaborations or solo projects.",
+      "stack": ["GO", "Docker"]
+    },
+    {
+      "id": "95",
+      "name": "Encrypt Service",
+      "img": "puppies-service.webp",
+      "link": "https://github.com/sneuder/encrypt-words-back",
+      "description": "Cutting-edge encryption for developers, ensuring top-tier data protection. Its intuitive interface enables effortless encryption, guaranteeing airtight security for applications.",
+      "stack": ["Node", "TypeScript", "Express"]
+    },
+    {
+      "id": "8",
+      "name": "Service Puppies",
+      "img": "puppies-service.webp",
+      "link": "https://github.com/sneuder/puppies-backend",
+      "description": "NodeJS service supporting Puppies app data. CRUD functions with clean architecture, scalability, and technologies like Sequelize and JWT for robust functionality.",
+      "stack": ["Node", "Express", "Sequelize"]
+  }
+  ],
   "projects": [
     {
         "id": "98",

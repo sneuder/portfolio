@@ -1,0 +1,57 @@
+@import '../../styles/index.scss';
+
+.containerGoTo {
+  @include transition();
+
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+
+
+  .link {
+    @include transition();
+
+    border-bottom: 1px solid transparent;
+    font-weight: 600;
+    color: $primary-color;
+    font-size: 1.15rem;
+
+    &:visited {
+      color: $primary-color;
+    }
+  }
+
+  .icon {
+    @include transition();
+    transition-duration: 0.2s;
+
+    color: $secondary-color;
+  }
+
+  &:hover {
+    .link {
+      border-bottom: 1px solid $primary-color;
+    }
+
+    .icon {
+      color: $secondary-color;
+      transform: translateX(5px);
+    }
+  }
+}
+
+.reverse {
+  grid-template-columns: auto 1fr;
+
+  .icon {
+    grid-row: 1 / 2;
+  }
+
+  &:hover {
+    .icon {
+      transform: translateX(-5px);
+    }
+  }
+}
