@@ -37,7 +37,7 @@
       "company": "Blockdemy",
       "rol": "Frontend Developer",
       "date": "May - Nov 2022",
-      "brief": "In my role, I led the main website, providing ongoing support for optimal functionality and user experience. I implemented automated systems for prompt and accurate event date updates, eliminating manual intervention. I optimized guide distribution through efficient automated processes, ensuring swift delivery. Rigorous unit testing of website components guaranteed reliability and high performance throughout the web application",
+      "brief": "In my role, I led the main website, providing ongoing support for optimal functionality and user experience. I implemented automated systems for prompt and accurate event date updates, eliminating manual intervention. I optimized guide distribution through efficient automated processes, ensuring swift delivery. Rigorous unit testing of website components guaranteed reliability and high performance throughout the web application.",
       "stack": ["Node", "TypeScript", "Express", "Sequelize", "JavaScript", "React", "NextJS", "Webflow", "Zappier", "Airtable"]
     },
     {
@@ -67,12 +67,28 @@
       "stack": ["Node", "TypeScript", "Express"]
     },
     {
+      "id": "110",
+      "name": "CMS Webflow",
+      "img": "cms-webflow.webp",
+      "link": "https://github.com/sneuder/webflow-cms-backend/tree/main",
+      "description": "The CMS smoothly connects to Webflow's API for dynamic content management, optimizing workflows and website performance while empowering easy content creation and publishing.",
+      "stack": ["Node", "TypeScript", "Express"]
+    },
+    {
+      "id": "111",
+      "name": "Hotel Management",
+      "img": "hotel-management.webp",
+      "link": "https://github.com/sneuder/hotel-management",
+      "description": "The hotel management app revolutionizes operations by simplifying bookings, check-ins, and guest services, ensuring seamless functionality and exceptional customer experiences.",
+      "stack": ["Node", "TypeScript", "NestJS", "Mongoose", "GraphQL"]
+    },
+    {
       "id": "8",
-      "name": "Service Puppies",
+      "name": "Puppies Service",
       "img": "puppies-service.webp",
       "link": "https://github.com/sneuder/puppies-backend",
       "description": "NodeJS service supporting Puppies app data. CRUD functions with clean architecture, scalability, and technologies like Sequelize and JWT for robust functionality.",
-      "stack": ["Node", "Express", "Sequelize"]
+      "stack": ["Node", "Express", "Sequelize", "PostgreSQL"]
   }
   ],
   "projects": [
@@ -91,7 +107,6 @@
         "link": "https://workspace-page.vercel.app/",
         "description": "Swift Solution for effortless Docker workspaces. Streamline coding with hassle-free, efficient setups. Perfect for individual or team projects, offering instant, portable development environments.",
         "stack": ["React", "TypeScript", "Chakra", "CSS", "Vite"]
-
     },
     {
         "id": "96",
@@ -100,15 +115,30 @@
         "link": "https://encrypt-word.vercel.app/",
         "description": "Cutting-edge encryption for top-tier data protection. Intuitive interface ensures seamless data security. Explore encryption options effortlessly for shielding digital assets.",
         "stack": ["TypeScript", "Tailwind", "CSS", "Vite"]
-
     },
     {
         "id": "95",
         "name": "Encrypt Service",
-        "img": "puppies-service.webp",
+        "img": "encrypt-service.webp",
         "link": "https://github.com/sneuder/encrypt-words-back",
         "description": "Cutting-edge encryption for developers, ensuring top-tier data protection. Its intuitive interface enables effortless encryption, guaranteeing airtight security for applications.",
         "stack": ["Node", "TypeScript", "Express"]
+    },
+    {
+        "id": "110",
+        "name": "CMS Webflow",
+        "img": "cms-webflow.webp",
+        "link": "https://github.com/sneuder/webflow-cms-backend/tree/main",
+        "description": "The CMS smoothly connects to Webflow's API for dynamic content management, optimizing workflows and website performance while empowering easy content creation and publishing.",
+        "stack": ["Node", "TypeScript", "Express"]
+    },
+    {
+      "id": "111",
+      "name": "Hotel Management",
+      "img": "hotel-management.webp",
+      "link": "https://github.com/sneuder/hotel-management",
+      "description": "The hotel management app revolutionizes operations by simplifying bookings, check-ins, and guest services, ensuring seamless functionality and exceptional customer experiences.",
+      "stack": ["Node", "TypeScript", "NestJS", "Mongoose", "GraphQL"]
     },
     {
         "id": "94",
@@ -126,6 +156,22 @@
         "description": "Fictitious marketing agency's landing page. Developed with Webflow, it showcases services with payment integrations, CMS, and eCommerce for web development.",
         "stack": ["Webflow", "Figma"]
     },
+    {
+      "id": "177",
+      "name": "Form Country",
+      "img": "form-country-front.webp",
+      "link": "https://form-name-country.vercel.app/",
+      "description": "This project uses a GraphQL API for user registration, featuring a country selection field within the standard form that collects name, email, and password details.",
+      "stack": ["React", "CSS", "Tailwind"]
+   },
+    {
+      "id": "178",
+      "name": "Form Country Service",
+      "img": "form-country-back.webp",
+      "link": "https://github.com/sneuder/form-name-country-back",
+      "description": "Service for saving records from Client form. It consumes a Country API and save its information for being used in Cliente side. Besides it uses validation of data before transactions in databases.",
+      "stack": ["TypeScript", "Node", "NestJS", "GraphQL", "Mongoose"]
+  },
     {
         "id": "7",
         "name": "Chaira Login",
@@ -152,11 +198,11 @@
     },
     {
         "id": "8",
-        "name": "Service Puppies",
+        "name": "Puppies Service",
         "img": "puppies-service.webp",
         "link": "https://github.com/sneuder/puppies-backend",
         "description": "NodeJS service supporting Puppies app data. CRUD functions with clean architecture, scalability, and technologies like Sequelize and JWT for robust functionality.",
-        "stack": ["Node", "Express", "Sequelize"]
+        "stack": ["Node", "Express", "Sequelize", "PostgreSQL"]
     }
   ]
 }
