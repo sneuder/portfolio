@@ -61,7 +61,7 @@
     {
       "id": "95",
       "name": "Encrypt Service",
-      "img": "puppies-service.webp",
+      "img": "encrypt-service.webp",
       "link": "https://github.com/sneuder/encrypt-words-back",
       "description": "Cutting-edge encryption for developers, ensuring top-tier data protection. Its intuitive interface enables effortless encryption, guaranteeing airtight security for applications.",
       "stack": ["Node", "TypeScript", "Express"]
