@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/src/assets/projects/cli-workspace.webp",
+      "source": "/static",
       "headers": [
         {
           "key": "Cache-Control",
