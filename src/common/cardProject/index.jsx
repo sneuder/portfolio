@@ -10,11 +10,19 @@ const CardProject = ({ project }) => {
         rel="noreferrer"
         aria-label="Link to check project"
       >
-        <img
-          src={require(`../../assets/projects/${project.img}`)}
-          alt=""
-          loading="lazy"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcSet={require(`../../assets/projects/${project.img}`)}
+            alt=""
+            loading="lazy"
+          />
+          <img
+            src={require(`../../assets/projects/mobile/${project.img}`)}
+            alt=""
+            loading="lazy"
+          />
+        </picture>
       </a>
       <div className={style.projectInfo}>
         <h3>{project.name}</h3>
