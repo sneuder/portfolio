@@ -46,9 +46,11 @@
 @media screen and (max-width: 650px) {
   .containerProject {
     width: 100%;
-    scroll-snap-align: start;
-
     box-shadow: none;
+
+    & img {
+      border-radius: 5px;
+    }
 
     .projectInfo {
       padding: 1.5rem 0 0 0;
