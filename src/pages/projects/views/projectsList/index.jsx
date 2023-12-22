@@ -1,8 +1,11 @@
+import React, { Suspense } from 'react'
 import style from './index.module.scss'
-
-import CardProject from '../../../../common/cardProject'
 import Vertical from '../../../../common/layouts/vertical'
 import GoTo from '../../../../common/goTo'
+
+const LazyCardProject = React.lazy(() =>
+  import('../../../../common/cardProject')
+)
 
 const ProjectsList = () => {
   const { projects } = require('../../../../assets/data/index.json')
@@ -18,9 +21,11 @@ const ProjectsList = () => {
       <GoTo instruction={goToInstruction} />
 
       <div className={style.containerProjects}>
-        {projects.map((project) => (
-          <CardProject project={project} key={project.id} />
-        ))}
+        <Suspense fallback={<div>Loading...</div>}>
+          {projects.map((project) => (
+            <LazyCardProject project={project} key={project.id} />
+          ))}
+        </Suspense>
       </div>
     </Vertical>
   )

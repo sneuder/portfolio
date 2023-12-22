@@ -5,7 +5,11 @@ const CardProject = ({ project }) => {
   return (
     <div className={style.containerProject} key={project.id}>
       <a href={project.link} target="_blank" rel="noreferrer">
-        <img src={require(`../../assets/projects/${project.img}`)} alt="" />
+        <img
+          src={require(`../../assets/projects/${project.img}`)}
+          alt=""
+          loading="lazy"
+        />
       </a>
       <div className={style.projectInfo}>
         <h3>{project.name}</h3>
