@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import style from './index.module.scss'
 import Vertical from '../../../../common/layouts/vertical'
 import GoTo from '../../../../common/goTo'
@@ -19,13 +19,10 @@ const ProjectsList = () => {
   return (
     <Vertical>
       <GoTo instruction={goToInstruction} />
-
       <div className={style.containerProjects}>
-        <Suspense fallback={<div>Loading...</div>}>
-          {projects.map((project) => (
-            <LazyCardProject project={project} key={project.id} />
-          ))}
-        </Suspense>
+        {projects.map((project) => (
+          <LazyCardProject project={project} key={project.id} />
+        ))}
       </div>
     </Vertical>
   )

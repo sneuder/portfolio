@@ -5,10 +5,11 @@ import scrolling from '../../config/scrolling'
 import SectionContainer from '../../common/layouts/sectionContaner'
 import Navbar from '../../components/navbar'
 
-import React, { Suspense } from 'react'
+import Heroe from './views/heroe'
+import Experience from './views/experience'
 
-const Heroe = React.lazy(() => import('./views/heroe'))
-const Experience = React.lazy(() => import('./views/experience'))
+import React from 'react'
+
 const Projects = React.lazy(() => import('./views/projects'))
 const Contact = React.lazy(() => import('./views/contact'))
 
@@ -19,19 +20,10 @@ const Home = () => {
     <>
       {createPortal(<Navbar />, document.getElementById('navbar'))}
       <SectionContainer>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Heroe />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Experience />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          {' '}
-          <Projects />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Contact />
-        </Suspense>
+        <Heroe />
+        <Experience />
+        <Projects />
+        <Contact />
       </SectionContainer>
     </>
   )

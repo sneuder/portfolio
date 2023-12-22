@@ -4,7 +4,12 @@ import StackTag from '../stackTag'
 const CardProject = ({ project }) => {
   return (
     <div className={style.containerProject} key={project.id}>
-      <a href={project.link} target="_blank" rel="noreferrer">
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Link to check project"
+      >
         <img
           src={require(`../../assets/projects/${project.img}`)}
           alt=""

@@ -8,7 +8,7 @@ function App() {
 
   return (
     <GeneralContext.Provider value={toolsContext}>
-      <Suspense fallback={<div>Loading</div>}>
+      <Suspense fallback={<div></div>}>
         <RouterProvider />
       </Suspense>
     </GeneralContext.Provider>

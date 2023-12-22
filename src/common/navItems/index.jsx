@@ -8,16 +8,16 @@ const NavItems = () => {
   const { cv } = links
 
   return (
-    <ul className={style.navItemsContainer}>
+    <div className={style.navItemsContainer}>
       {linksInfo.map(({ to, text }) => (
-        <li key={to}>
+        <div key={to}>
           <Link smooth to={to}>
             {text}
           </Link>
-        </li>
+        </div>
       ))}
       <Button text="Resume" link={cv} buttonType="primaryButton" />
-    </ul>
+    </div>
   )
 }
 
