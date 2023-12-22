@@ -2,31 +2,15 @@ import GeneralContext from './context'
 import useSetContext from './hooks/useSetContext'
 
 import RouterProvider from './components/router'
-
-import Home from './pages/home'
-import Projects from './pages/projects'
-
+import { Suspense } from 'react'
 function App() {
   const toolsContext = useSetContext()
 
-  const routerInstruction = {
-    home: {
-      path: '/',
-      component: () => {
-        return <Home />
-      }
-    },
-    projects: {
-      path: '/projects',
-      component: () => {
-        return <Projects />
-      }
-    }
-  }
-
   return (
     <GeneralContext.Provider value={toolsContext}>
-      <RouterProvider routerInstruction={routerInstruction} />
+      <Suspense fallback={<div>Loading</div>}>
+        <RouterProvider />
+      </Suspense>
     </GeneralContext.Provider>
   )
 }

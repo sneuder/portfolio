@@ -3,7 +3,6 @@ import style from './index.module.scss'
 import Vertical from '../../../../common/layouts/vertical'
 import GoTo from '../../../../common/goTo'
 
-// Lazy load CardProject component
 const LazyCardProject = React.lazy(() =>
   import('../../../../common/cardProject')
 )
