@@ -22,16 +22,24 @@
   }
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: $media-lg-tablet) {
   .titleContainer > p {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $media-md-mobile) {
   .titleContainer {
     & h2 {
       font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: $media-mobile) {
+  .titleContainer {
+    & h2 {
+      font-size: 2.5rem;
     }
   }
 }

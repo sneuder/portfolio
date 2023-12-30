@@ -43,21 +43,26 @@
   transform: translateY(-10px);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: $media-tablet) {
   .containerProject {
     width: 100%;
     box-shadow: none;
-
-    & img {
-      border-radius: 5px;
-    }
 
     .projectInfo {
       padding: 1.5rem 0 0 0;
     }
 
     & img {
+      border-radius: 5px;
       height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: $media-mobile) {
+  .containerProject {
+    & img {
+      height: 180px;
     }
   }
 }

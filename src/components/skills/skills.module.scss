@@ -52,7 +52,7 @@
     }
   }
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: $media-lg-tablet) {
     .containerInfo {
       width: 100%;
       flex-direction: column;
@@ -70,7 +70,7 @@
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: $media-md-mobile) {
     .containerInfo {
       .containerSkills {
         display: grid;

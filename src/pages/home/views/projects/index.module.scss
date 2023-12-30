@@ -1,9 +1,11 @@
+@import '../../../../styles/index.scss';
+
 .containerProjects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: $media-md-mobile) {
     grid-template-columns: 1fr;
   }
 }
