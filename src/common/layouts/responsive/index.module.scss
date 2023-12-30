@@ -1,4 +1,6 @@
-@media screen and (max-width: 924px) {
+@import '../../../styles/index.scss';
+
+@media screen and (max-width: $media-lg-tablet) {
   .responsiveContainer {
     display: none;
   }
