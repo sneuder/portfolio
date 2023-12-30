@@ -25,3 +25,25 @@
     font-weight: 400;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .mainHeaderContainer {
+    align-self: center;
+
+    & h1 {
+      color: $primary-color;
+      font-size: 3rem;
+    }
+
+    & .role {
+      font-size: 1.5rem;
+    }
+
+    & .text {
+      width: 100%;
+      line-height: 1.5rem;
+      color: $primary-color;
+      font-weight: 400;
+    }
+  }
+}

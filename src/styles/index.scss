@@ -34,3 +34,9 @@ body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 350px) {
+  #root {
+    padding: 70px 1rem;
+  }
+}
