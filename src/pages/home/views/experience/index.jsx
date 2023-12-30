@@ -7,8 +7,10 @@ import Title from '../../../../common/title'
 import StackTag from '../../../../common/stackTag'
 import GoTo from '../../../../common/goTo'
 
+import useData from '../../../../hooks/useData'
+
 const Experience = () => {
-  const { sections, jobs } = require('../../../../assets/data/index.json')
+  const { sections, jobs } = useData('sections', 'jobs')
   const { title, text } = sections.experience
 
   const goToInstruction = {

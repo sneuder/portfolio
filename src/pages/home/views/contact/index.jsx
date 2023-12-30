@@ -7,8 +7,10 @@ import Title from '../../../../common/title'
 import ContactForm from '../../../../components/contactForm'
 import Image from '../../../../components/image'
 
+import useData from '../../../../hooks/useData'
+
 const Contact = () => {
-  const { sections } = require('../../../../assets/data/index.json')
+  const { sections } = useData('sections')
   const { title, text } = sections.contact
 
   return (

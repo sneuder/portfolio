@@ -3,8 +3,10 @@ import Button from '../button'
 import { NavHashLink as Link } from 'react-router-hash-link'
 import linksInfo from '../../constants/linksInfo'
 
+import useData from '../../hooks/useData'
+
 const NavItems = () => {
-  const { links } = require('../../assets/data/index.json')
+  const { links } = useData('links')
   const { cv } = links
 
   return (

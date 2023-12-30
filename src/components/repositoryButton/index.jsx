@@ -2,8 +2,10 @@ import style from './index.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
+import useData from '../../hooks/useData'
+
 const RepositoryButton = () => {
-  const { links } = require('../../assets/data/index.json')
+  const { links } = useData('links')
 
   return (
     <a
