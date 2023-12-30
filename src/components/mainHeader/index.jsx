@@ -2,8 +2,10 @@ import Button from '../../common/button'
 import Vertical from '../../common/layouts/vertical'
 import style from './index.module.scss'
 
+import useData from '../../hooks/useData'
+
 const MainHeader = () => {
-  const { sections, links } = require('../../assets/data/index.json')
+  const { sections, links } = useData('sections', 'links')
   const { role, text } = sections.home
   const { linkedin } = links
 

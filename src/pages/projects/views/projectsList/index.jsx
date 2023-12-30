@@ -3,12 +3,14 @@ import style from './index.module.scss'
 import Vertical from '../../../../common/layouts/vertical'
 import GoTo from '../../../../common/goTo'
 
+import useData from '../../../../hooks/useData'
+
 const LazyCardProject = React.lazy(() =>
   import('../../../../common/cardProject')
 )
 
 const ProjectsList = () => {
-  const { projects } = require('../../../../assets/data/index.json')
+  const { projects } = useData('projects')
 
   const goToInstruction = {
     text: 'Come Back',

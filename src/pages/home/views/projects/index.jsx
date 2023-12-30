@@ -8,11 +8,10 @@ import Title from '../../../../common/title'
 import CardProject from '../../../../common/cardProject'
 import GoTo from '../../../../common/goTo'
 
+import useData from '../../../../hooks/useData'
+
 const Projects = () => {
-  const {
-    sections,
-    mainProjects
-  } = require('../../../../assets/data/index.json')
+  const { sections, mainProjects } = useData('sections', 'mainProjects')
   const { title, text } = sections.projects
 
   const goToInstruction = {
