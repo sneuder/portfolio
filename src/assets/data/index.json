@@ -51,6 +51,14 @@
   ],
   "mainProjects": [
     {
+      "id": "99",
+      "name": "Uploader Service",
+      "img": "uploader-service.webp",
+      "link": "https://github.com/sneuder/uploader-service",
+      "description": "Created a backend service enabling secure file uploads while seamlessly storing associated data in the database. Implemented robust file handling and database integration for a streamlined user experience.",
+      "stack": ["GO", "Echo", "GORM", "JWT"]
+    },
+    {
       "id": "98",
       "name": "CLI Workspace",
       "img": "cli-workspace.webp",
@@ -92,6 +100,14 @@
   }
   ],
   "projects": [
+    {
+      "id": "99",
+      "name": "Uploader Service",
+      "img": "uploader-service.webp",
+      "link": "https://github.com/sneuder/uploader-service",
+      "description": "Created a backend service enabling secure file uploads while seamlessly storing associated data in the database. Implemented robust file handling and database integration for a streamlined user experience.",
+      "stack": ["GO", "Echo", "GORM", "JWT"]
+    },
     {
         "id": "98",
         "name": "CLI Workspace",
